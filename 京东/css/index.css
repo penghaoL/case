@@ -1,0 +1,119 @@
+.grid {
+    height: 480px;
+}
+.grid .col-1 {
+    width: 190px;
+    height: 100%;
+    background-color: #000;
+    margin-right: 10px;
+    padding:15px 0;
+    box-sizing:border-box;
+    background-color: #6E6568;
+}
+.grid .col-1 ul li{
+    transition: all 1s;
+    padding-left:11px;
+    line-height: 28px;
+    color:#fff;
+    font-size:14px;
+
+}
+.grid .col-1 ul li:hover {
+    background-color:rgba(255,255,255,0.5);
+}
+.grid .col-1 ul li a {
+    color:#fff;
+    margin:0 5px;
+}
+.grid .col-1 ul li a:hover {
+    color:#F10215;
+}
+.grid .col-2 {
+    width: 790px;
+    height: 480px;
+
+}
+.grid .col-3 {
+    width: 190px;
+    height: 100%;
+    background-color: #aaa;
+}
+/*ÂÖ²¥Í¼¿ªÊ¼*/
+#around {
+    width: 790px;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+#around ul {
+    width: 600%;
+    position:absolute;
+}
+#around ul li{
+    float: left;
+}
+#dot {
+    width: 192px;
+    /*height: 20px;*/
+    background-color: rgba(255,255,255,0.1);
+    position:absolute;
+    left:50%;
+    margin-left: -96px;
+    bottom:20px;
+    border-radius: 9px;
+}
+#dot span {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255,255,255,1);display: inline-block;
+    margin:0 10px;
+    border-radius: 50%;
+    cursor:pointer;
+}
+#dot span:first-child{
+    background-color:#C60C1B;
+}
+#around-s{
+    display:none;
+}
+#around-s span:first-child {
+    display: inline-block;
+    width: 37px;
+    height: 70px;
+    margin-top:-45px;
+    background-color: rgba(0,0,0,0.2);
+    text-align: center;
+    line-height:70px;
+    font-size:18px;
+    color:rgba(255,255,255,0.6);
+    position:absolute;
+    top:50%;
+    right:2px;
+}
+#around-s span:last-child{
+    display: inline-block;
+    width: 37px;
+    height: 70px;
+    margin-top:-45px;
+    background-color:rgba(0,0,0,0.2);
+    text-align: center;
+    line-height:70px;
+    font-size:18px;
+    color:rgba(255,255,255,0.6);
+    position:absolute;
+    top:50%;
+    left:2px;
+}
+.col-2{
+    position:relative;
+}
+.around-b img:first-child{
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.around-b img:last-child{
+    position:absolute;
+    bottom:0;
+    right:0;
+}

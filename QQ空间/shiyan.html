@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="icon" href="favcion.ico">
+	<style type="text/css">
+          ul, li,a{
+          	padding:0px;
+          	margin:0px;
+          }
+          body{
+          	background-color: #f3e3c1;
+          	padding: 0;
+          	margin: 0;
+          }
+          .box1 img{
+          	width: 100%;
+          	z-index: -10;
+          }
+          .box2{
+            width:78%;
+          	height: 45px;
+          	background-color:rgba(0,0,0,0.8);
+          	position:relative;
+          	top:-440px;
+          	margin:0 auto;
+          	border-radius: 6px;
+          	box-shadow:3px 3px 5px rgba(0,0,0,0.5);
+          }
+          .nav{
+          	/*background-color:rgba(34,46,54,0.25);*/
+          	width: 1000px;
+          	height: 45px;
+          	margin:0 auto;
+          	
+          }
+          .nav ul li{
+          	list-style: none;
+
+          }
+          .nav ul li a{
+          	text-decoration:none;
+          	color:#fff;
+          	font-size:18px;
+          	line-height: 45px;
+          	float: left;
+          	padding: 0px 20px;
+          	opacity: 0.5;
+
+          }
+          .nav ul li a:hover{
+          	opacity:1;
+          }
+          .box3{
+          	height: 225px;
+          	width: 78%;
+          	background:rgba(0,0,0,0);
+          	margin:0 auto;
+          	position:relative;
+          	top:-710px;
+          }
+          .box301{
+          	height: 26px;
+          	font-size: 26px;
+          	color: #fff;
+          	text-shadow:2px 2px 3px #000;
+          }
+          .box301 img{
+            height: 26px;
+            width: 26px;
+            padding-left: 20px;
+            position: absolute;
+            z-index: 100;
+            top: 5px;
+
+          }
+          
+          .box302{
+          	width: 60px;
+          	height: 30px;
+          	background-color:rgba(0,0,0,0.4);
+          	border-radius:20px;
+          	position:absolute;
+          	top: 36px;
+          	right: 0;
+             
+            font-size:20px;
+            line-height: 32px;
+            text-align:center;
+          }
+          .box302 a{
+            
+            text-align: center;
+          	line-height: 25px;
+          	color:white;
+          	text-decoration:none;
+          }
+          .box303{
+          	width: 118px;
+          	height: 118px;
+          	border:3px solid #fff;
+          	position:relative;
+          	top: 70px;
+
+          }
+          .box303 img{
+          	width: 118px;
+          	height: 118px;
+          }
+          .box304{
+          	position: relative;
+          	left: 130px;
+          	top: -56px;
+          	color: white;	
+          	font-weight: 50;
+          	font-size: 22px;
+          }
+          .box304 p{
+          	font-size:15px;
+          	padding-left: 50px;
+          }
+          .box3041{
+          	height: 8px;
+          	width: 200px;
+          	background-color: rgba(0,0,0,0.5);
+          	border-radius:5px;
+          	padding-left: 50px;
+          }
+          .box305 a{
+          	display: inline-block;
+          	width: 80px;
+          	height: 24px;
+          	background-color: #FFCF04;
+          	font-size: 15px;
+          	color: #A23D00;
+          	text-align: center;
+          	text-decoration: none;
+          	border:1px solid #A23D00;
+          	border-radius:5px;
+          	position: relative;
+          	top: -94px;
+          	left: 382px;
+
+          }
+          .box306{
+          	color: white;
+          	font-weight: 50;
+          	font-size: 15px;
+          	position:relative;
+          	top: -100px;
+          	right:-880px;	
+
+
+          }
+          .box7{
+          	width: 172px;
+          	height: 221px;
+          	background:rgba(46,46,46,0.9);
+          	position:absolute;
+          	top: 280px;
+          	left: 149px;
+          	border-radius:3px;
+          }
+          .box7 ul li{
+          	
+          	list-style:none;
+          	text-align: center;
+          }
+          .box7 ul li a{
+          	display: inline-block;
+          	text-decoration: none;
+          	width: 172px;
+          	height: 36px;
+          	line-height:36px;
+          	color: #fff;
+          	opacity:0.5;
+
+
+          }
+          .box7 ul li a:hover{
+          	opacity:1; 	
+          	background-color:#333333;
+          }
+          .box8 input{
+          	width: 445px;
+          	height: 66px;
+          	background-color: #404040;
+          	border:0px none;
+          	text-align:top;
+          	color:rgba(255,255,255,0.5);
+          	position: absolute;
+          	top:280px;
+          	left: 340px;
+          	padding-left:5px;
+          	border-radius:0px;
+
+          }
+          .box9{
+          	position:absolute;
+          	top: 280px;
+          	left:790px;
+          }
+          .box9 a{
+          	display: inline-block;
+          	width: 47px;
+          	height: 68px;
+          	margin-left:1px;
+          }
+          .box10{
+          	width: 68px;
+          	height: 68px;
+          	background-color:rgba(0,0,0,0.9);
+          	color: white;
+          	text-align: center;
+          	overflow: hidden;
+          	position:absolute;
+          	top:280px;
+          	left:955px;
+
+          }
+          .box101{
+          	margin-top:15px;
+          }
+          .box11{
+          	height: 68px;
+          	width: 177px;
+          	background: #2E2E2E;
+          	color:rgba(255,255,255,0.5);
+          	font-size:30px;
+          	line-height: 68px;
+          	position: absolute;
+          	top: 280px;
+          	left:1023px;
+
+          }
+          .box11 a{
+          	display: inline-block;
+          	padding-left: 15px;
+          	text-decoration: none;
+          	color:rgba(255,255,255,0.5);
+
+          }
+          .box11 a:hover{
+          	color:rgba(255,255,255,1);
+
+
+          }
+          .box12{
+          	height: 35px;
+          	width: 584px;
+          	background: #333333;
+          	line-height: 35px;
+          	color: white;
+          	padding-left: 10px;
+          	position: absolute;
+          	top:350px;
+          	left: 340px;
+
+          }
+          .box13{
+          	height: 500px;
+          	width: 594px;
+          	background: #333;
+          	position: absolute;
+          	top: 386px;
+          	left: 340px;
+          	color: #fff;
+          
+          }
+          .box13 .tu1 img{
+          	border-radius:50px;
+          	width: 47px;
+          	height: 47px;
+          	margin-left: 10px;
+          	margin-top: 10px;
+          }
+          .box13 p{
+          	position: absolute;top: 0px;
+          	left: 60px;
+          }
+          .box13 p h5{
+          	position:absolute;
+          	top: 0px;
+          }
+          #time{
+          	font-size:10px;
+          	display: inline-block;
+          }
+          .box13 .tu2 img{
+         width: 250px;
+         padding-left: 10px;
+         padding-top: 10px;
+          }
+          .wenzi{
+          	font-size:10px;
+          	padding-left: 15px;
+          	opacity: 0.5;
+          }
+          .box14{
+          	width: 172px;
+          	height: 700px;
+          	background:rgba(46,46,46,0.9);
+          	position:absolute;
+          	top: 505px;
+          	left: 149px;
+          	border-radius:3px;
+          }
+          .box14 ul li{
+          	
+          	list-style:none;
+          	text-align: center;
+          }
+          .box14 ul li a{
+          	display: inline-block;
+          	text-decoration: none;
+          	width: 172px;
+          	height: 36px;
+          	line-height:36px;
+          	color: #fff;
+          	opacity:0.5;
+
+
+          }
+          .box14 ul li a:hover{
+          	opacity:1; 	
+          	background-color:#333333;
+          }
+          .box15{
+          	width: 245px;
+          	height: 325px;
+          	background:rgba(46,46,46,0.9);
+          	position: absolute;
+          	top: 350px;
+          	left: 955px;
+          	border-radius:3px;
+
+          }
+          .box151 ul li{
+          	list-style: none;
+          	
+
+
+          }
+          .box151 ul li a{
+          	display: inline-block;
+          	height: 20px;
+          	line-height: 20px;
+          	color:rgba(225,225,225,0.5);
+          	text-decoration:none;
+          	float:left;
+          	padding: 0px 5px;
+            border-right:1px solid rgba(225,225,225,0.5);
+          }
+          .box151 ul li a:hover{
+          	color:rgba(225,225,225,1);
+          }
+          
+          .box152 ul li{
+          	list-style:none;
+
+          }
+          .box152 ul li a img{
+          	width: 70px;
+          	height: 70px;
+          }
+          .box152{
+          	padding-top: 20px;
+          }
+          .box152 ul li a{
+          	width: 70px;
+          	height: 100px;
+          	display: inline-block;
+          	float:left;
+          	margin-left: 8px;
+          	color:rgba(225,225,225,0.5);
+          	text-decoration:none;
+          	text-align: center;
+          
+          }
+          .box152 ul li a img{
+          		border-radius:5px;
+          }
+          .box16{
+          	height: 450px;
+          	width: 594px;
+          	background: #333;
+          	position: absolute;
+          	top: 890px;
+          	left: 340px;
+          	color: #fff;
+          
+          }
+          .box16 .tu1 img{
+          	border-radius:50px;
+          	width: 47px;
+          	height: 47px;
+          	margin-left: 10px;
+          	margin-top: 10px;
+          }
+          .box16 p{
+          	position: absolute;top: 0px;
+          	left: 60px;
+          }
+          .box16 p h5{
+          	position:absolute;
+          	top: 0px;
+          }
+          #time{
+          	font-size:10px;
+          	display: inline-block;
+          }
+          .box16 .tu2 img{
+         width: 550px;
+         padding-left: 10px;
+         padding-top: 10px;
+          }
+          .wenzi{
+          	font-size:10px;
+          	padding-left: 15px;
+          	opacity: 0.5;
+          }
+           .box17{
+          	width: 245px;
+          	height: 325px;
+          	background:rgba(46,46,46,0.9);
+          	position: absolute;
+          	top: 680px;
+          	left: 955px;
+          	border-radius:3px;
+
+          }
+          /*.box151 ul li{
+          	list-style: none;
+          	
+
+
+          }
+          .box151 ul li a{
+          	display: inline-block;
+          	height: 20px;
+          	line-height: 20px;
+          	color:rgba(225,225,225,0.5);
+          	text-decoration:none;
+          	float:left;
+          	padding: 0px 5px;
+            border-right:1px solid rgba(225,225,225,0.5);
+          }
+          .box151 ul li a:hover{
+          	color:rgba(225,225,225,1);
+          }
+          
+          .box152 ul li{
+          	list-style:none;
+
+          }
+          .box152 ul li a img{
+          	width: 70px;
+          	height: 70px;
+          }
+          .box152{
+          	padding-top: 20px;
+          }
+          .box152 ul li a{
+          	width: 70px;
+          	height: 100px;
+          	display: inline-block;
+          	float:left;
+          	margin-left: 8px;
+          	color:rgba(225,225,225,0.5);
+          	text-decoration:none;
+          	text-align: center;
+          
+          }
+          .box152 ul li a img{
+          		border-radius:5px;
+          }*/
+          
+          .yincang ul li{
+          	list-style: none;
+position:none;
+
+          }
+          .yincang ul li a{
+          	
+          	height: 45px;
+          	background: rgba(0,0,0,0.5);
+          	display:inline-block;
+          	float: left;
+          	line-height: 45px;
+          	padding:0 15px;
+          	text-decoration:none;
+          	color:#fff;
+
+
+          }
+          .yincang{
+          	display:none;
+          	position: absolute;
+          	top: 269px;
+          	left:710px; 
+          	
+          }
+          #yincang:hover+.yincang{
+          	display:list-item;
+          }
+          .box152{
+
+          }
+	</style>
+</head>
+<body>
+	<div class="box1"><img src="bg11.jpg" alt=""></div>
+	<div class="box2">
+	<div class="nav">
+        <ul>
+        	<li><a href="#">主页</a></li>
+        	<li><a href="#">日志</a></li>
+        	<li><a href="#">相册</a></li>
+        	<li><a href="#">留言板</a></li>
+        	<li><a href="#">说说</a></li>
+        	<li><a href="#">个人档案</a></li>
+        	<li><a href="#">个人中心</a></li>
+        </ul>
+	</div>
+	</div>
+	<div class="box3">
+        <div class="box301">暮色挽歌<img src="tit.png"></div>
+        <div class="box302"><a href="#">16</a></div>
+        <div class="box303"><img src="100.png"></div>
+        <div class="box304">
+         拥抱着你<br>
+         <p>成长值1成长速度-10点/天<p>
+         <div class="box3041"></div>
+        </div>
+        <div class="box305"><a href="#">续费黄钻</a></div>
+        <div class="box306">今日访客0&nbsp;被挡访客311<br>访客量11021</div>
+	</div>
+	<div class="box7">
+    <ul>
+    	<li><a href="#">好友动态</a></li>
+    	<li><a href="#">特别关心</a></li>
+    	<li><a href="#">与我相关</a></li>
+    	<li><a href="#">那年今日</a></li>
+    	<li><a href="#">腾讯课堂</a></li>
+    	<li id="yincang"><a href="#">游戏应用</a></li>
+    </ul>
+	</div>
+	<div class="yincang">
+     <ul>
+     	<li><a href="#">空间</a></li>
+     	<li><a href="#">空间</a></li>
+     	<li><a href="#">空间</a></li>
+     </ul>
+	</div>
+	<div class="box8"><input type="text" name="" value="说点什么吧&nbsp;...&nbsp;..."></div>
+    <div class="box9">
+    <a href="#"><img src="未标题-1.jpg" alt=""></a><a href="#"><img src="未标题-2.jpg" alt=""></a><a href="#"><img src="未标题-3.jpg" alt=""></a>
+    </div>
+    <div class="box10"><div class="box101">周三<br>04.26</div></div>
+    <div class="box11"><a href="#">签到</a></div>
+    <div class="box12">全部动态</div>
+    <div class="box13"><div class="tu1"><img src="100.png" alt=""></div><p>刘朋昊<br><div id="time">&nbsp;&nbsp;12:16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“努力才是王道”</div><br>&nbsp;&nbsp;&nbsp;假如生活欺骗了你，不要悲伤不要难过，认真就好。</p>
+    <div class="tu2"><img src="shu.jpg"></div>
+    <div class="wenzi">浏览565228人</div>
+    </div>
+    <div class="box14">
+    <ul>
+    	<li><a href="#">好友动态</a></li>
+    	<li><a href="#">特别关心</a></li>
+    	<li><a href="#">与我相关</a></li>
+    	<li><a href="#">那年今日</a></li>
+    	<li><a href="#">腾讯课堂</a></li>
+    	<li><a href="#">游戏应用</a></li>
+    	<li><a href="#">好友动态</a></li>
+    	<li><a href="#">特别关心</a></li>
+    	<li><a href="#">与我相关</a></li>
+    	<li><a href="#">那年今日</a></li>
+    	<li><a href="#">腾讯课堂</a></li>
+    	<li><a href="#">游戏应用</a></li>
+    	<li><a href="#">游戏应用</a></li>
+    	<li><a href="#">游戏应用</a></li>
+    	<li><a href="#">游戏应用</a></li>
+    	<li><a href="#">游戏应用</a></li>
+    	<li><a href="#">游戏应用</a></li>
+    	<li><a href="#">游戏应用</a></li>
+    	<li><a href="#">游戏应用</a></li>
+    </ul>
+	</div>
+	<div class="box15">
+       <div class="box151">
+        <ul>
+        	<li><a href="#">谁看过我</a></li>
+        	<li><a href="#">我看过谁</a></li>
+        	<li><a href="#">被挡访客</a></li>
+        </ul>
+       </div>
+       <div class="box152">
+        <ul>
+        	<li><a href="#"><img src="1001.jpg" alt="">昨天</a></li>
+        	<li><a href="#"><img src="1002.jpg" alt="">昨天</a></li>
+        	<li><a href="#"><img src="1003.jpg" alt="">昨天</a></li>
+        	<li><a href="#"><img src="1004.jpg" alt="">昨天</a></li>
+        	<li><a href="#"><img src="1005.jpg" alt="">昨天</a></li>
+        	<li><a href="#"><img src="1006.jpg" alt="">昨天</a></li>
+        	<li><a href="#"><img src="1007.jpg" alt="">昨天</a></li>
+        	<li><a href="#"><img src="1008.jpg" alt="">昨天</a></li>
+        	<li><a href="#"><img src="1009.jpg" alt="">昨天</a></li>
+        </ul>
+       </div>
+	</div>
+	<div class="box16"><div class="tu1"><img src="1005.jpg" alt=""></div><p>贾玲<br><div id="time">&nbsp;&nbsp;10:24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“努力才是王道”</div><br>&nbsp;&nbsp;&nbsp;你想要的生活取决于你所付出的努力，此致敬礼。</p>
+    <div class="tu2"><img src="2.jpg"></div>
+    <div class="wenzi">浏览565228人</div>
+    </div>
+    <div class="box17">
+       <div class="box151">
+        <ul>
+        	<li><a href="#">谁在意我</a></li>
+        	<li><a href="#">我在意谁</a></li>
+        	
+        </ul>
+       </div>
+       <div class="box152">
+        <ul>
+        	<li><a href="#"><img src="1009.jpg" alt="">贾玲</a></li>
+        	<li><a href="#"><img src="1008.jpg" alt="">李晨</a></li>
+        	<li><a href="#"><img src="1007.jpg" alt="">范冰冰</a></li>
+        	<li><a href="#"><img src="1006.jpg" alt="">李达康</a></li>
+        	<li><a href="#"><img src="1005.jpg" alt="">赵立春</a></li>
+        	<li><a href="#"><img src="1004.jpg" alt="">侯亮平</a></li>
+        	<li><a href="#"><img src="1003.jpg" alt="">祁同伟</a></li>
+        	<li><a href="#"><img src="1002.jpg" alt="">田国福</a></li>
+        	<li><a href="#"><img src="1001.jpg" alt="">赵雷</a></li>
+        </ul>
+       </div>
+	</div>
+	
+</body>
+</html>

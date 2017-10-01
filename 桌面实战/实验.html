@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+      
+	</style>
+</head>
+<body>
+      <button id="button01">隐藏</button><br>
+	<img src="258.jpg" alt="" id="box">
+	<script>
+    var button01 = document.getElementById("button01");
+    var box = document.getElementById("box");
+    button01.onclick = function(){
+    if(button01.innerHTML === "隐藏"){
+    	box.style.display = "none";
+    	button01.innerHTML = "显示";
+    }else{
+    	box.style.display = "block";
+    	button01.innerHTML = "隐藏";
+    }
+   }
+	</script>
+</body>
+</html>

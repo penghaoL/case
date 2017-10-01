@@ -1,0 +1,1007 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+    <title true>手机网站设计</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--[if lt IE 10]>
+    <script type="text/javascript">
+        window.location.href = "http://m.vj14119046.faisco.cn/manage/kill-IE.jsp";
+    </script>
+    <![endif]-->
+    <link type="text/css" href="http://mo.faisys.com/css/mobi/mobiDesign.min.css?v=201708281510" rel="stylesheet" />
+    <link type="text/css" href="http://mo.faisys.com/css/manage.min.css?v=201709011029" rel="stylesheet" />
+    <link type="text/css" href="http://mo.faisys.com/css/comm/vcomponents.min.css?v=201708281510" rel="stylesheet" />
+    <link type="text/css" href="http://mo.faisys.com/css/comm/jquery/plugins/scrollbar/jquery.mCustomScrollbar.min.css?v=201708161404" rel="stylesheet" />
+    <meta id='_TOKEN' value='f3b951d28e36fa8a14feae3736da9978'/>
+
+
+    <script type='text/javascript'>
+        var _portalHost = "www.faisco.cn";
+        function closeWXBind(result){
+            if( Fai.isNull(result) ){
+                return;
+            }
+            window.location.reload();
+        };
+    </script>
+</head>
+<body>
+<!-- start topBarArea  -->
+<div id="topBarArea" class="topBarArea">
+    <div class="topBar fk-topBar">
+        <div class="left fk-topBarLeft fk-topBarLeft-isFix J_topBarLeft">
+
+
+            <a class="tbutton topSetButton J_topSetButton fk-topBarLeft-Item" href="javascript:;" onClick="Mobi.logDog(200025, 25);Mobi.rapidMobi.init();return false;" title="点击进入极速建站">
+                <i class="fk-topBarLeft-icon fk-topBarLeft-iconJsjz"></i>
+                <span class="fk-topBarLeft-txt">极速建站</span>
+            </a>
+
+
+            <a id="topSetButtonMobi" class="tbutton topSetButton J_topSetButton fk-topBarLeft-Item" href="javascript:;" onClick="Mobi.showTopManageFrame('manageFrameProductManage', 'http://vj14119046.faisco.cn', '');return false;"  title="点击进行网站管理">
+                <i class="fk-topBarLeft-icon fk-topBarLeft-iconManage"></i>
+                <span class="fk-topBarLeft-txt">网站管理</span>
+            </a>
+
+            <a class="tbutton topSetButton J_topSetButton fk-topBarLeft-Item" href="http://vj14119046.faisco.cn" onClick="statisticalData(3);" title="点击进入电脑版" target="_blank">
+                <i class="fk-topBarLeft-icon fk-topBarLeft-iconPC"></i>
+                <span class="fk-topBarLeft-txt">电脑版</span>
+            </a>
+
+        </div>
+        <div class="right fk-topBarRight  ">
+
+            <!-- <div  id="siteQrCode" class="siteQrCode"> 网站二维码</div> http://m.vj14119046.icoc.me -->
+
+            <button id="viewButton"   class="fk-topBarRight-button mySite" hidefocus="true">预览</button>
+            <button id="cancelButton" class="fk-topBarRight-button cancelButton buttonDisabled" onClick="Mobi.closeStyleDesign();return false;" >取消</button>
+            <button id="saveButton"   class="fk-topBarRight-button saveButton buttonDisabled"   onClick="Mobi.saveStyle();return false;"><div class="saveButton-ico"></div>保存</button>
+
+
+            <a href="javascript:;"  class="upgrade toolHref" onClick="statisticalData(15);jumpTo('promote');" title="点击购买升级，升级后您的网站内容将完整保留。"></a>
+            <div class='fk-line'></div>
+
+
+            <div class="fk-topBarRight-menuItem">
+                <div id="topBarStaff" class="topBarStaff siteGroupFre  toolDiv" _mousein="0">
+                    <div class="topBarStaff-ico"></div>
+                    <div class="topBarBulletin-tips"></div>
+                </div>
+            </div>
+            <div class="fk-line "></div>
+
+
+
+            <div class="fk-topBarRight-menuItem">
+                <div class="topBarBulletin toolDiv" _mouseIn="0">
+                    <div class="topBarBulletin-ico"></div>
+                    <div class="topBarBulletin-tips"></div>
+                </div>
+            </div>
+            <div class='fk-line'></div>
+
+            <div class="fk-topBarRight-menuItem">
+                <div id="choiceService" _mouseIn="0" class="choiceService toolDiv">
+                    <div class="choiceService-ico"></div>
+                </div>
+            </div>
+            <div class='fk-line '></div>
+
+
+
+
+        </div>
+
+
+        <div class="topBarStaffContent">
+
+
+            <div class="box top">
+                <a hidefocus="true" class="leftImg versionLink" href="http://jz.faisco.com/proFunc.html" title="您在使用“网站免费版”，点击了解更多。" target="_blank" onclick="statisticalData(11);"><div class="versionIcon siteGroupFre"></div></a>
+                <div class="right">
+                    <div class="title">
+                        网站免费版
+                    </div>
+                    <div class="text">
+
+                    </div>
+                </div>
+
+                <a class="buyBtn" hidefocus="true" href="http://www.faisco.cn/jump.jsp?t=10&_f=14" onclick="statisticalData(12);" class="update" target="_blank">升级</a>
+
+            </div>
+
+
+
+            <div class="middle">
+                员工帐号：<input type="text" id="topBarStaffAcct" value="boss"/>
+                <a hidefocus="true" class="save" href="javascript:;" onclick="saveSacct(1);return false;">保存</a>
+            </div>
+
+            <div class="bottom">
+                <div class="title">[boss</div>
+                <div class="title">],下午好!</div>
+
+                <a hidefocus="true" class="staffManage" href="http://www.faisco.cn/portal.jsp#appId=corpStaff" onclick="statisticalData(13);" target="_blank">[管理员工]</a>
+
+                <a href="javascript:statisticalData(14);Mobi.logout('http://m.vj14119046.icoc.me');" hidefocus="true" class="exit" style="margin-right:5px;">[退出]</a>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="topBarBulletinContent">
+            <div class="menuDiv">
+
+                <div class="fk-line"></div>
+                <div id="menuUpdate" class="menu">功能更新<div class="redPoint"></div></div>
+            </div>
+
+
+            <div id="update" class="listDiv" style="display:none;">
+                <div class='J_drainImgPanel'><div class='J_drainImgContent'>
+                    <a class='drainImg' _type='cdDrain' href='http://cdm.faisco.cn/manage/flyerManage.jsp?fromPageId=2' target='_blank' onclick='Mobi.logDog(200036, 3);'><img src='http://jz.faisys.com/image/pro/20160401/cd_drain.jpg?v=201605251407'/></a>
+                </div></div>
+                <div class='newsList'><a hidefocus='true' href="http://jz.faisco.com/news/9036" target='_blank' onclick='Mobi.logDog(100038, 102);'><span class='iconPoint'>&nbsp;</span>8月16日更新：新版导航来了</a></div>
+                <div class='newsList'><a hidefocus='true' href="http://jz.faisco.com/news/8852" target='_blank' onclick='Mobi.logDog(100038, 102);'><span class='iconPoint'>&nbsp;</span>8月02日更新：手机推出横向标签模块了！</a></div>
+                <div class='newsList'><a hidefocus='true' href="http://jz.faisco.com/news/8605" target='_blank' onclick='Mobi.logDog(100038, 102);'><span class='iconPoint'>&nbsp;</span>7月19日更新：微信登录打通了！</a></div>
+
+            </div>
+        </div>
+
+        <div class="serviceList">
+
+            <a class="serviceItem onlineQQ2" href="http://www.faisco.cn/qq.jsp?s=4" target="_blank" onclick="statisticalData(4); Mobi.logDog(4000007, 9); Mobi.logDog(4000061, 10);">人工客服</a>
+
+            <a class="serviceItem" href="http://www.faisco.com/ts.html?t=0" onclick="statisticalData(21);">服务投诉</a>
+            <a class="serviceItem" href="http://jz.faisco.com/blog.html" target="_blank" onclick="statisticalData(5);Mobi.logDog(4000063,15);">帮助中心</a>
+            <a class="serviceItem" href="http://e.weibo.com/faisco" target="_blank" onclick="statisticalData(7);">新浪微博</a>
+            <span class="serviceItem mobiweixin">微信关注<span class = "spanDIV"></span></span>
+            <div style="clear:both;"></div>
+        </div>
+
+    </div>
+</div>
+<!-- end topBarArea  -->
+<div class="mobiStyleDesign" id="mobiStyleDesign">
+    <div class="iframeLoading">
+        <div class="spinnerPanel">
+            <div class="spinnerContainer spinnerLoading1">
+                <div class="circle1">&nbsp;</div>
+                <div class="circle2">&nbsp;</div>
+                <div class="circle3">&nbsp;</div>
+                <div class="circle4">&nbsp;</div>
+            </div>
+            <div class="spinnerContainer spinnerLoading2">
+                <div class="circle1">&nbsp;</div>
+                <div class="circle2">&nbsp;</div>
+                <div class="circle3">&nbsp;</div>
+                <div class="circle4">&nbsp;</div>
+            </div>
+            <div class="spinnerContainer spinnerLoading3">
+                <div class="circle1">&nbsp;</div>
+                <div class="circle2">&nbsp;</div>
+                <div class="circle3">&nbsp;</div>
+                <div class="circle4">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <div id="mobiStyleDesignPanel" class="mobiStyleDesignPanel transitionPanel">
+        <div id="panes" class="panes iframeBigPanels choicePanel activeTab">
+
+            <div class="leftPanel">
+                <div class="leftSide transitionLeft">
+                    <div class="leftSideTop"></div>
+                    <div class="leftSideCenter">模块列表</div>
+                    <div class="leftSideBottom"></div>
+                </div>
+                <div id="mobiModule" class="funcModule iframePanel transitionLeft">
+                    <iframe id="mobiModuleFrame" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+                </div>
+                <div id="modulePanelBg" class="modulePanelBg transitionLeft"></div>
+            </div>
+
+            <div class="centerPanel">
+                <div id="mobiReview" class="mobiReview iframePanel">
+                    <div class="mobiReviewBackground"></div>
+                    <div id="mobiReviewPage" class="mobiReviewPage iframePanel">
+                        <div id="navigatorUrl" class="navigatorUrl">
+                            <div id="returnBackButton"  class="buttonDisabled"></div>
+                            <input type="text" class="navigatorUrlInput" onClick="this.select();" readonly id="navigatorUrlInput" />
+                            <div class="siteQrCode1" id="siteQrCode1"></div>
+                        </div>
+                        <iframe id="mobiReviewPageFrame" frameborder="0" width="100%" height="100%" scrolling="yes"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightPanel">
+                <div class="rightPanelIframe">
+                    <ul id="tabs" class="tabs fk-tabs">
+
+                        <li class='rightTab1'><a class="tabsMenu" href="javascript:;" onFocus="this.blur()" id="mobiStyleTab" onClick="Mobi.initTab({initParent: 0,initChild:0}, false);return false;"><div class="styleIcon"></div><div class="tabText">风格</div></a></li>
+                        <li class='rightTab2'><a class="tabsMenu" href="javascript:;" onFocus="this.blur()" id="mobiColumnTab" onClick="Mobi.initTab({initParent: 2,initChild:0}, false);return false;"><div class="columnIcon"></div><div class="tabText">栏目</div></a></li>
+                        <li class='rightTab3'><a class="tabsMenu" href="javascript:;" onFocus="this.blur()" id="mobiServiceTab" onClick="Mobi.initTab({initParent: 5,initChild:0}, false);return false;"><div class="serviceIcon"></div><div class="tabText">服务</div></a></li>
+                        <li class='rightTab4'><a class="tabsMenu" href="javascript:;" onFocus="this.blur()" id="mobiSettingTab" onClick="Mobi.initTab({initParent: 3,initChild:0}, false);return false;"><div class="systemIcon"></div><div class="tabText">系统</div></a></li>
+                    </ul>
+                    <div class="fk-rightIframePanelsWrap">
+                        <div class="rightIframePanels transitionPanel" id="rightIframePanels">
+                            <div id="mobiStyle" class="choicePanel">
+                                <iframe id="mobiStyleFrame" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+                            </div>
+                            <div id="mobiColumn" class="choicePanel">
+                                <iframe id="mobiColumnFrame" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+                            </div>
+                            <div id="mobiService" class="choicePanel">
+                                <iframe id="mobiServiceFrame" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+                            </div>
+                            <div id="mobiSetting" class="choicePanel">
+                                <iframe id="mobiSettingFrame" frameborder="0" width="100%" height="100%" scrolling="auto"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="wxSetting" class="funcModule iframeBigPanels choicePanel">
+
+            <div class="wxPlatformPaddingTop" id="wxPlatformPaddingTop">
+                <div class="wxPlatformPaddingBox" id="wxPlatformPaddingBox">
+                    <iframe id="wxSettingFrame" frameborder="0" width="100%" height="100%" style="position:absolute;left:0px;" scrolling="no"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--  end mobidesign -->
+<div id='siteQRCodeDisplay' class='webSiteQRCodeDisplay'>
+    <img title='' src='http://m.vj14119046.faisco.cn//qrCode.jsp?cmd=qr' >
+    <span>扫描二维码</span>
+</div>
+
+</body>
+
+
+<script type='text/javascript'>
+
+    document.domain = 'faisco.cn';
+
+</script>
+<script type='text/javascript' src="http://mo.faisys.com/js/jquery/jquery-core.min.js?v=201611081523"></script>
+<script type='text/javascript' src="http://mo.faisys.com/js/comm/fai.min.js?v=201708291554"></script>
+<script type='text/javascript' src="http://mo.faisys.com/js/jquery/jquery-ui-core.min.js?v=201610311824"></script>
+<script type='text/javascript' src="http://mo.faisys.com/js/comm/faiui.min.js?v=201708281510"></script>
+<script type='text/javascript' src="http://mo.faisys.com/js/manage.min.js?v=201708311034"></script>
+<script type='text/javascript' src="http://mo.faisys.com/js/jquery/plugins/scrollbar/jquery.mCustomScrollbar.min.js?v=201610311824"></script>
+
+<script type="text/javascript">
+    try {
+        Fai.top = parent.Fai.top;
+    } catch (e) {
+    }
+</script>
+<script type="text/javascript">
+    var _cid = 14742176;
+    var _resRoot = 'http://mo.faisys.com';
+    Fai.top._userHostName = 'm.vj14119046.faisco.cn';
+    Fai.top._visitorHostName = "http://m.vj14119046.icoc.me";
+    Fai.top._isOpenDesign = true;
+    Fai.top._isShowJsjz = true;
+
+    Fai.top._other = {"productNewDeInfo":{"isNewUser":1,"isProductNewDetail":1},"newsNewDefInfo":{"isNewUser":1,"isNewsNewDetail":2},"qrcode_ImageId":"","dc":2,"mobiScreenFull":0,"cml":[],"mc":{"h":true,"c":"","t":1},"hc":{"h":true},"favIcon":{"showType":0,"id":""},"iosIcon":{"showType":0,"id":""},"WXShareIcon":{"showType":0,"id":"","titType":0,"tit":"","cont":""},"templateInfo":{"templatePresetIndex":5,"templateDesignType":1},"mobiBgMusic":{"isOpen":0,"id":"","isGlobal":0,"setting":{"isAuto":0,"isLoop":0,"isHidden":0,"position":0},"filePath":""},"mobiMallHidden":0,"mobiServiceOnline":{"sl":[{"serviceType":"0","serviceAccount":"10000","showFont":"QQ客服","showType":true,"isFontIcon":"true","color":"rgb(238, 82, 102)","fileId":"","classname":"faisco-icons-scQq","filePath":""}],"o":false},"tc":{"h":true}};
+    Fai.top._otherChange = 0;
+
+    Fai.top._changeStyleNum = 0;//用于记录网站风格是否更改，如果更改则在刷新或者关闭前进行提醒。(注意新产品详情)
+    Fai.top._openDays = 0;
+    Fai.top._openMobiRapid = false;
+    Fai.top._manageLcid = 2052; //管理态下的语言版本
+    var _topBarMyNewsVersion = "d41d8cd98f00b204e9800998ecf8427e";
+    var _topBarUpdateVersion = "b1d7078ea595de1258db12cbc1d9b226";
+    var _oem = false;
+
+    Fai.top.file_size_limit = "1";
+
+    var _manageStatus = false;
+    //被拖拽创建的模块的目标位置
+    var preModulePosition = 0;
+
+    var _topBarUpgradeYearFlag = "false";
+    var _siteVipExpireDays = -1000;
+
+    Fai.top._noCover = 0 ; // 隐藏弹窗遮罩层
+
+    $(function(){
+        //浏览器判断
+        ;
+        //协助控制IE9下取消响应式布局
+        if(Fai.isIE9()) {
+            $("html").addClass("ie9");
+        }
+
+        //控制顶部栏目版本Logo
+        Mobi.initPage();
+
+        showProductQRCode();
+
+        // 绑定choiceService，显示或隐藏serviceList
+        bindChoiceService();
+
+
+        initQcode();
+
+        //消息提示
+        initTopBarBulletin();
+
+        //adjustIframe("wxSettingFrame");
+        //initSideModule();
+        //纠正IE9下高度问题
+        // if(Fai.isIE9()){
+        // 	var height = $("#mobiStyleDesign").height();
+        // 	$("#mobiStyleDesign").css("height",height+"px");
+        // }
+
+        //var _mobiTabInit = $.cookie("_mobiTabInit");
+
+        /*$(window).unload(function() {
+         document.cookie = "_mobiTabInit=" + encodeURIComponent('{"initParent":0,"initChild":0}');
+         });*/
+        //用户刷新前触发的事件
+        $(window).bind("beforeunload", function(){
+            if(top.Fai.top._changeStyleNum > 0) {
+                return '您的手机网站正处于编辑状态，离开该页面将会失去您对手机网站所做的修改。';
+            }
+        });
+
+        Fai.top.$("#mobiStyleDesign .iframeLoading").remove();
+
+        //检测浏览器可视窗口resize，当在小屏下遮挡"X"按钮时，绑定遮罩层可点击关闭预览弹窗事件
+        //$(window).resize(function(){
+        //	judgeScreenSize();
+        //});
+
+        mallServiceStatus(false);
+
+        //管理态下顶部返回按钮
+        navigatorReturnBack();
+
+
+
+        //修改微信图标的链接 by jser
+        var topLocation = Fai.top.location,
+                wxSrc = "./mobiWeChat.jsp" + topLocation.search + topLocation.hash;
+        $("#topSetButtonWX").attr("href", wxSrc);
+
+
+    });
+
+    function mallServiceStatus(status){
+        if(Fai.top._other.templateInfo.templateDesignType == 2){
+            $(".rightTab1").css("width","33.3%");
+            $(".rightTab2").css("width","33.3%");
+            $(".rightTab3").hide();
+            $(".rightTab4").css("width","33.3%");
+            if(status){
+                $.ajax({
+                    type : 'post',
+                    url : "../ajax/mobi_h.jsp?cmd=initOtherProf",
+                    error : function(){
+                        Fai.ing( '服务繁忙，请稍后再试。', false );
+                    },
+                    success : function(data){
+                        var result = jQuery.parseJSON( data );
+                        Fai.top._serviceList = result.serviceList;
+                        if(result.success){
+                            Fai.ing( '在线客服数据同步完成。', false );
+                        }
+                    }
+                });
+            }
+        }else{
+            $(".rightTab1").css("width","25%");
+            $(".rightTab2").css("width","25%");
+            $(".rightTab3").css("width","25%").show();
+            $(".rightTab4").css("width","25%");
+        }
+    }
+
+
+
+
+    function statisticalData(type){
+        if(parseInt(type) !== parseInt(type)) return;
+        Mobi.logDog(200025, type);
+    }
+
+    function initSideModule(){
+        $(".leftPanel .leftSide").hover(function(){
+            $("#mobiModule").addClass("mobiModuleShow");
+            $("#modulePanelBg").addClass("modulePanelShowBg");
+            $(this).addClass("leftSideHover");
+        }, function(e){
+            var mobiModule = $("#mobiModule");
+            if(parseInt(mobiModule.attr("_mousein")) === 1){
+                mobiModule.removeClass("mobiModuleShow");
+                $("#modulePanelBg").removeClass("modulePanelShowBg");
+            }
+            $(this).removeClass("leftSideHover");
+
+        });
+
+        $("#mobiModule").hover(function(){
+            $(this).attr("_mousein", 1);
+        }, function(){
+            $(this).attr("_mousein", 0);
+            $(this).removeClass("mobiModuleShow");
+            $("#modulePanelBg").removeClass("modulePanelShowBg");
+        });
+    }
+
+    function initTopBarBulletin(){
+        $("#viewButton").click(function(){
+            if($("#viewButton").hasClass('buttonDisabled')){
+                return false;
+            }
+            viewDivShow();
+            statisticalData(16);
+        });
+
+        // staff显示
+        $("#topBarStaff").mouseleave(function(){
+            $(this).attr('_mouseIn', 0);
+            setTimeout(function(){
+                var mouseIn = parseInt($('#topBarStaff').attr('_mouseIn'));
+                if(mouseIn == 0){
+                    $('.topBarStaffContent').hide();
+                    $("#topBarStaff").removeClass("topBarStaff-hover");
+                }
+            }, 100);
+        }).mouseover(function(){
+            $(this).attr('_mouseIn', 1);
+            $(this).addClass("topBarStaff-hover");
+            var div = $(".topBarStaffContent");
+            //若topBarStaffContent已经是可见状态，则return，无须重复操作，避免重复logDog
+            if(div.is(':visible')){
+                return;
+            }
+            div.css('left', Math.ceil($(this).position().left) - div.outerWidth() + $(this).outerWidth() + 1);
+            div.css('top', $(this).position().top + 39);
+            div.show();
+            Mobi.logDog(200038, 0);
+            if(Fai.top._topBarUpgradeYearFlag == "true"){	//升级1年到4年优惠入口曝光的统计
+                Mobi.logDog(200038, 8);
+            }
+            if(div.find('.j_renewTip').is(':visible')){		//续费优惠入口曝光统计
+                Mobi.logDog(200038, 9);
+            }
+        });
+        $(".topBarStaffContent").mouseover(function(){
+            $('#topBarStaff').attr('_mouseIn', 1);
+            $(this).show();
+        }).mouseleave(function(){
+            $('#topBarStaff').attr('_mouseIn', 0);
+            setTimeout(function(){
+                var mouseIn = parseInt($('#topBarStaff').attr('_mouseIn'));
+                if(mouseIn == 0){
+                    $('.topBarStaffContent').hide();
+                    $("#topBarStaff").removeClass("topBarStaff-hover");
+                }
+            }, 100);
+        });
+        $('#topBarStaffAcct').focusin(function(){
+            if ( $(this).val() == "请输入员工帐号" ){
+                $(this).val("");
+            }
+        }).blur(function(){
+            if ( $(this).val() == "" ){
+                $(this).val("请输入员工帐号");
+            }
+        });
+
+        //以下变量作为曝光统计的标识
+        var isCouponNews = $('.topBarBulletinContent .newsList_coupon').length > 0; //是否有网站版本现金券到期的提醒消息
+        var isSiteVipNews = $('.topBarBulletinContent .newsList_site').length > 0; //是否有网站版本到期的提醒消息
+        var drainSrcId = -1; //由功能更新上方引流图的类型决定要统计曝光的srcId
+        var drainType = $('.topBarBulletinContent .drainImg:eq(0)').attr('_type');
+        if(drainType == 'hdDrain'){
+            drainSrcId = 9;
+        }else if(drainType == 'cdDrain'){
+            drainSrcId = 10;
+        }else if(drainType == 'jzDrain'){
+            drainSrcId = 11;
+        }
+        $(".topBarBulletin").mouseleave(function(){
+            $(this).attr('_mouseIn', 0);
+            setTimeout(function(){
+                var mouseIn = parseInt($('.topBarBulletin').attr('_mouseIn'));
+                if(mouseIn == 0){
+                    $('.topBarBulletinContent').hide();
+                    $(".topBarBulletin").removeClass("topBarBulletin-hover");
+                    if ( $.cookie("topBarUpdateVer") != null && $.cookie("topBarUpdateVer") != _topBarUpdateVersion ){
+                        /*$('.topBarBulletinRemind').html("有新功能更新");
+                         $('.topBarBulletinRemind').css({"top":"30px","left":"-20px","width":"75px"});
+                         $('.topBarBulletinRemind').show();*/
+                        $('.topBarBulletin').addClass("topBarBulletin-hasNew");
+                        $('.topBarBulletinContent .redPoint').show();
+                    }
+                }
+            }, 100);
+        }).mouseover(function(){
+            if(parseInt($(this).attr('_mouseIn')) != 1){
+                statisticalData(9);
+            }
+            $(this).attr('_mouseIn', 1);
+            //若topBarBulletinContent已经是可见状态，则return，无须重复操作，避免重复logDog
+            if($('.topBarBulletinContent').is(':visible')){
+                return;
+            }
+            $(this).addClass("topBarBulletin-hover");
+            var div = $(".topBarBulletinContent");
+            div.css('left', $(this).position().left - div.outerWidth() + $(this).outerWidth() + 1);
+            div.css('top', $(this).position().top + 39);
+            div.show();
+            //$('.topBarBulletinRemind').hide();
+            $('.topBarBulletin').removeClass("topBarBulletin-hasNew");
+            $.cookie("topBarMyNewsVer", _topBarMyNewsVersion, {expires: 365, domain:document.domain, path:"/"});
+            /*if ( $('.topBarBulletinRemind').html() == "有新功能更新" ){
+             $('#menuUpdate').click();
+             $('.topBarBulletinRemind').html('');
+             }*/
+            //没有“我的消息”时，显示“功能更新”
+            if($('.topBarBulletinContent #message').length == 0){
+                $('.topBarBulletinContent .menuDiv').addClass('menuDiv-single');
+                $('#menuUpdate').addClass('menu-single menu-check').click();
+            }
+            //增加“展开我的消息”和“展开功能更新”dog数据统计
+            if($('.topBarBulletinContent #message').is(':visible')){
+                Mobi.logDog(200036, 0);
+                if(isCouponNews){
+                    Mobi.logDog(200036, 7);
+                }
+                if(isSiteVipNews){
+                    Mobi.logDog(200036, 8);
+                }
+            }else if($('.topBarBulletinContent #update').is(':visible')){
+                Mobi.logDog(200036, 1);
+                if(drainSrcId != -1){
+                    Mobi.logDog(200036, drainSrcId);
+                }
+            }
+        });
+
+        $(".topBarBulletinContent").mouseover(function(){
+            $('.topBarBulletin').attr('_mouseIn', 1);
+            $(this).show();
+        }).mouseleave(function(){
+            $('.topBarBulletin').attr('_mouseIn', 0);
+            setTimeout(function(){
+                var mouseIn = parseInt($('.topBarBulletin').attr('_mouseIn'));
+                if(mouseIn == 0){
+                    $('.topBarBulletinContent').hide();
+                    $(".topBarBulletin").removeClass("topBarBulletin-hover");
+                    if ( $.cookie("topBarUpdateVer") != null && $.cookie("topBarUpdateVer") != _topBarUpdateVersion ){
+                        /*$('.topBarBulletinRemind').html("有新功能更新");
+                         $('.topBarBulletinRemind').css({"top":"30px","left":"-20px","width":"75px"});
+                         $('.topBarBulletinRemind').show();*/
+                        $('.topBarBulletin').addClass("topBarBulletin-hasNew");
+                        $('.topBarBulletinContent .redPoint').show();
+                    }
+                }
+            }, 100);
+        });
+        $('.topBarBulletinContent .menu').click(function(){
+            if ( $(this).attr("id") == "menuMessage" ){
+                $('.topBarBulletinContent #message').show();
+                $('.topBarBulletinContent #update').hide();
+                statisticalData(9);
+                //先根据menu-check判断是否是由另一边切换过来的，发生切换时才logDog
+                if(!$(this).hasClass('menu-check')){
+                    Mobi.logDog(200036, 0);
+                    if(isCouponNews){
+                        Mobi.logDog(200036, 7);
+                    }
+                    if(isSiteVipNews){
+                        Mobi.logDog(200036, 8);
+                    }
+                }
+            } else {
+                $('.topBarBulletinContent #message').hide();
+                $('.topBarBulletinContent #update').show();
+                $('.topBarBulletinContent .redPoint').hide();
+                if(!$(this).hasClass('menu-check')){
+                    Mobi.logDog(200036, 1);
+                    if(drainSrcId != -1){
+                        Mobi.logDog(200036, drainSrcId);
+                    }
+                }
+                $.cookie("topBarUpdateVer", _topBarUpdateVersion, {expires: 365, domain:document.domain, path:"/"});
+                statisticalData(10);
+            }
+            $('.topBarBulletinContent .menu').removeClass("menu-check");
+            $(this).addClass("menu-check");
+        });
+        // 消息提示
+        // 首次登录不弹，以便注册后让第一时间体验，减少干扰，直销才出现
+        if ( !_oem ){
+            if ( $.cookie("topBarMyNewsVer") == null && $.cookie("topBarUpdateVer") == null ) {
+                $.cookie("topBarMyNewsVer", "-", {expires: 365, domain:document.domain, path:"/"});
+                $.cookie("topBarUpdateVer", "-", {expires: 365, domain:document.domain, path:"/"});
+            } else {
+                var tmp = [
+                    "<span class='topBarBulletinRemind'></span>"
+                ];
+                if ( $.cookie("topBarMyNewsVer") != null && $.cookie("topBarMyNewsVer") != _topBarMyNewsVersion ){
+                    //$('.topBar .topBarBulletin').append(tmp.join(""));
+                    //$('.topBarBulletinRemind').html("您有新消息");
+                    //$('.topBarBulletinRemind').css({"top":"30px","left":"-13px","width":"60px"});
+                    $('.topBarBulletin').addClass("topBarBulletin-hasNew");
+                    if ( $.cookie("topBarUpdateVer") != null && $.cookie("topBarUpdateVer") != _topBarUpdateVersion ){
+                        $('.topBarBulletinContent .redPoint').show();
+                    }
+                } else if ( $.cookie("topBarUpdateVer") != null && $.cookie("topBarUpdateVer") != _topBarUpdateVersion ){
+                    //$('.topBar .topBarBulletin').append(tmp.join(""));
+                    //$('.topBarBulletinRemind').html("有新功能更新");
+                    //$('.topBarBulletinRemind').css({"top":"30px","left":"-20px","width":"75px"});
+                    $('.topBarBulletin').addClass("topBarBulletin-hasNew");
+                    $('.topBarBulletinContent .redPoint').show();
+                }
+            }
+
+            //如果用户符合享受20天内将1年版本升级到4年的优惠条件，则在网站版本图标右上角显示红点，提示有优惠信息
+            if(Fai.top._topBarUpgradeYearFlag == "true" && $.cookie("topBarUpgradeYearFlag") == null){
+                var $topBarStaff = $('#topBarStaff');
+                $topBarStaff.addClass('topBarBulletin-hasNew');
+                $topBarStaff.one('mouseover', function(){
+                    $topBarStaff.removeClass('topBarBulletin-hasNew');
+                    $.cookie("topBarUpgradeYearFlag", "true", {expires:30, domain:document.domain, path:"/"});
+                });
+            }else if(Fai.top._topBarUpgradeYearFlag == "false" && $.cookie("topBarUpgradeYearFlag") != null){
+                $.cookie("topBarUpgradeYearFlag", null, {domain:document.domain, path:"/"});
+            }
+
+            //用户网站版本过期倒计时还剩1个月时，版本下拉框出现红色提醒圆点
+            if(Fai.top._siteVipExpireDays != $.cookie("siteVipExpireDays")){
+                var $topBarStaff = $('#topBarStaff');
+                if(Fai.top._siteVipExpireDays > -30){
+                    $topBarStaff.addClass('topBarBulletin-hasNew');
+                }
+                $topBarStaff.one('mouseover', function(){
+                    $topBarStaff.removeClass('topBarBulletin-hasNew');
+                    $.cookie("siteVipExpireDays", Fai.top._siteVipExpireDays, {expires:30, domain:document.domain, path:"/"});
+                });
+            }
+        }
+    }
+
+    function initQcode(){
+
+        $("#siteQrCode1").hover(function(){
+            var navigatorUrlInput = $("#navigatorUrlInput").val();
+            if(!navigatorUrlInput) return;
+
+            var qrCodeViewPanel = $("#qrCodeViewPanel");
+            var QrCodeHtml = "<div class='qrCodeViewPanel' id='qrCodeViewPanel'>"+
+                    "<img title='' class='qrcodeImage' src='http://m.vj14119046.faisco.cn//qrCode.jsp?cmd=qrurl&siteUrl="+Fai.encodeUrl(navigatorUrlInput)+"' >"+
+                    "</div>";
+
+            if(qrCodeViewPanel.length === 0){
+                $("#navigatorUrl").append(QrCodeHtml);
+            }
+        },function(){
+            var qrCodeViewPanel = $("#qrCodeViewPanel");
+            if(qrCodeViewPanel.length > 0){
+                qrCodeViewPanel.remove();
+            }
+        });
+
+
+    }
+
+    //控制顶部Button跳转
+    function jumpTo(place){
+        if(place == 'promote'){
+            var  jumpUrl = !false?"http://www.faisco.cn/jump.jsp?t=3&_f=13":"http://www.webportal.cc/jump.jsp?t=14";
+            window.open(jumpUrl);
+        } else {
+            //废弃，网站管理不在此入口进入了。
+            //top.location.href = "http://vj14119046.faisco.cn?openmf=default";
+            //window.open("http://vj14119046.faisco.cn?openmf=default");
+        }
+    }
+
+    function showProductQRCode(){
+        $('#siteQrCode').mouseenter(function(e){
+            $('#siteQRCodeDisplay').css("top", ($(this).offset().top + 25 )+ "px");
+            $('#siteQRCodeDisplay').css("left", ($(this).offset().left -20) + "px");
+            $('#siteQRCodeDisplay').show();
+        }).mouseleave(function(e) {
+            $('#siteQRCodeDisplay').hide();
+        });
+    };
+
+    function bindChoiceService(){
+        //消息提示
+        $(".choiceService").mouseleave(function(){
+            $(this).attr('_mouseIn', 0);
+            setTimeout(function(){
+                var mouseIn = parseInt($('.choiceService').attr('_mouseIn'));
+                if(mouseIn == 0){
+                    $('.serviceList').hide();
+                    $(".choiceService").removeClass("choiceService-hover");
+                }
+            }, 100);
+        }).mouseover(function(){
+            $(this).attr('_mouseIn', 1);
+            $(this).addClass("choiceService-hover");
+            var div = $(".serviceList");
+            div.css('left', $(this).position().left + 1);
+            div.css('top', $(this).position().top + 39);
+            div.show();
+        });
+        $(".serviceList").mouseover(function(){
+            $('.choiceService').attr('_mouseIn', 1);
+            $(this).show();
+        }).mouseleave(function(){
+            $('.choiceService').attr('_mouseIn', 0);
+            setTimeout(function(){
+                var mouseIn = parseInt($('.choiceService').attr('_mouseIn'));
+                if(mouseIn == 0){
+                    $('.serviceList').hide();
+                    $(".choiceService").removeClass("choiceService-hover");
+                }
+            }, 100);
+        });
+    }
+
+    var saveSacct = function(sid){
+        var sacct = $.trim($('#topBarStaffAcct').val());
+        if ( sacct == "" ){
+            Fai.ing("请输入员工帐号", true);
+            return;
+        }
+        reg = /^[a-zA-Z][a-zA-Z0-9]{0,19}$/;
+        if(!reg.test(sacct)){
+            Fai.ing("员工帐号由1-20个字符组成（字母或数字;首字为字母）");
+            return;
+        }
+
+        $.ajax({
+            type: "post",
+            url: "../ajax/staff_h.jsp",
+            data: 'cmd=set&sid=' + sid + '&sacct=' + sacct,
+            error: function(){
+                Fai.ing( '系统繁忙，请稍候重试', false );
+            },
+            success: function(result){
+                if (Fai.successHandle(result, '保存成功', '', '', 3, 1)){
+                    top.document.location.reload();
+                }
+            }
+        });
+    };
+
+    function viewDivShow(){
+        var view = new Array();
+        var $viewPanelInnerDom;
+        <!-- 预览页 -->
+        view.push('<div id="viewDivForPreview">');
+        view.push('		<div id="viewCurtain" class="viewCurtain_preview" ></div>');
+        view.push('		<div id="viewPanel" class="viewPanel_preview" >');
+        view.push('			<div id="viewPanelInner" class="viewPanelInner_preview " >');
+        view.push('				<div class="J_viewPanelInner_left viewPanelInner_left_preview viewPanelInner_left_4_0" >');
+        view.push('					<div class="viewPageBg_preview"></div>');
+        view.push('					<div class="viewPage_preview J_viewPageIframe " >');
+        view.push('						<iframe id="viewPageFrame_0"  data-src="http:\/\/m.vj14119046.icoc.me" width="328px" height="568px" style="border:none;width:328px;height:568px;"></iframe>');
+        view.push('						<div class="f-loaded-mask J_loaded_mask"><div class="f-iframe-loading J_iframeLoading"></div></div>');
+        view.push('					</div>');
+        view.push('				</div><!--');
+        view.push('				--><div class="viewPanelInner_right_preview J_viewPanelInner_right" >');
+        view.push('					<div class="viewPanelInner_rightInner_preview">');
+        view.push('						<div class="viewQRCode_preview">');
+        view.push('							<img width="230px" height="230px" style="margin:-15px 0 0 -15px;" src="http:\/\/m.vj14119046.faisco.cn//qrCode.jsp?cmd=qr" >');
+        view.push('						</div>');
+        view.push('						<div class="viewText_preview J_siteUrl f-siteUrl"><span>http:\/\/m.vj14119046.icoc.me</span></div>');
+        view.push('						<div class="arrow_preview"></div>');
+        view.push('					</div>');
+        view.push('				</div>');
+        view.push('			</div>');
+        view.push('     </div>');
+        view.push('</div>');
+
+        if($('#viewDivForPreview').length > 0){
+            return ;
+        }
+
+        $('body').append(view.join(''));
+
+        $viewPanelInnerDom = $('#viewDivForPreview #viewPanelInner');
+
+        if($viewPanelInnerDom.length < 1){
+            return ;
+        }
+
+
+
+        //绑定事件
+        $viewPanelInnerDom.find('.J_viewPanelInner_left, .J_viewPanelInner_right').off('click').on('click',function(e){
+            $viewPanelInnerDom.find(".J_siteUrl").removeClass('select-word');
+            e.stopPropagation();
+        });
+        $('#viewDivForPreview').off('click.curtain').on('click.curtain',function(){
+            $viewPanelInnerDom.find(".J_siteUrl").removeClass('select-word');
+            viewDivClose();
+        });
+
+        $viewPanelInnerDom.find(".J_siteUrl").off('click.select').on('click.select', function(event){
+            $(this).addClass('select-word');
+            var selection = window.getSelection();
+            var range = document.createRange();
+            range.selectNodeContents(this);
+            selection.removeAllRanges();
+            selection.addRange(range);
+            //add to clipboard.
+            //document.execCommand('copy');
+            event.stopPropagation();
+        });
+
+        //开始动画
+        $('#viewDivForPreview #viewCurtain').addClass('viewCurtainChange');
+        $viewPanelInnerDom.addClass('curtain-in');
+        $viewPanelInnerDom.find('.J_viewPanelInner_right').addClass('right-panel-in')
+                .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(event){
+                    if(event.originalEvent.animationName == 'slideInLeft'){
+                        var $viewPageFrame = $('#viewPageFrame_0');
+                        $viewPageFrame.attr('src', $viewPageFrame.attr('data-src')).load(function(){
+                            $viewPanelInnerDom.find('.J_viewPageIframe .J_loaded_mask').fadeOut();
+                            $(this).addClass('show-in-view');
+                        });
+                    }
+                });
+    }
+
+    function viewDivClose(){
+        $('#viewDivForPreview .J_viewPanelInner_right').removeClass('right-panel-in').addClass('right-panel-out');//  .removeClass('curtain-in')
+        setTimeout(function(){
+            $('#viewDivForPreview #viewCurtain').removeClass('viewCurtainChange');
+            $('#viewDivForPreview #viewPanelInner').addClass('curtain-out')
+                    .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(event){
+                        if(event.originalEvent.animationName == 'zoomOut'){
+                            $("#viewDivForPreview").remove();
+                        }
+                    });
+        }, 200);
+    }
+
+    //管理态下顶部返回按钮
+    function navigatorReturnBack(){
+
+        if(!sessionStorage.opened){
+            //新窗口清除模拟的历史记录
+            sessionStorage.removeItem("historyList");
+        }
+        sessionStorage.setItem('opened','true');
+
+        var returnBackButton = $("#returnBackButton"),
+                saveButton = $("#saveButton"),
+                hash = Fai.top.location.hash? Fai.top.location.hash : 'appId=index',
+                historyList = sessionStorage.getItem("historyList")? sessionStorage.getItem("historyList") : new Array(),
+                len = historyList.length,
+                isNeedSave,
+                flag = historyList instanceof Array;
+
+        //sessionStorage中的保存的字符串转换为数组
+        if(!flag){
+            historyList = historyList.split(',');
+        }
+        isUseReturnButton(historyList.length);
+
+        // 首次加载更新历史
+        if(hash !== 'undefined'){
+            if(historyList[historyList.length-1] !== getHash(hash)){
+                historyList.push(getHash(hash));
+                len = historyList.length;
+            }
+        }
+
+        //判断锚点改变来更新模拟的history数组
+        Fai.top.onhashchange  = function() {
+            hash = Fai.top.location.hash;
+            len = historyList.length;
+            //最后一次记录与当前值相同则不加入历史记录
+            if(historyList[len-1] == getHash(hash)){
+                return;
+            }else{
+                // 维护20条记录
+                if (len >= 20) {
+                    historyList.shift();
+                }
+                historyList.push(getHash(hash));
+                len = historyList.length;
+            }
+            isUseReturnButton(historyList.length);
+
+            sessionStorage.setItem("historyList",historyList);
+        };
+
+        returnBackButton.off('click.gb').on('click.gb',function(){
+            // 保存按钮禁用说明不需要保存
+            isNeedSave = saveButton.hasClass("buttonDisabled");
+            //需保存；判断长度是防止首页无返回记录并且更改数据之后仍然弹窗
+            if(!isNeedSave && (historyList.length>1) ){
+                Mobi.checkSaveBar({
+                    fun:goToLastHistory
+                });
+            }else{
+                goToLastHistory();
+            }
+            //回退更新模拟的history
+            function goToLastHistory(){
+                if(len > 1){
+                    historyList.pop(historyList[len-1]);
+                    len = historyList.length;
+                    var newUrl = historyList[len-1];
+                }
+
+                isUseReturnButton(historyList.length);
+                // 加载新的iframe地址
+                if(newUrl !== 'undefined'){
+                    Fai.top.$("#mobiReviewPageFrame").attr("src", newUrl);
+                }else{
+                    return;
+                }
+                sessionStorage.setItem("historyList",historyList);
+            }
+
+        });
+
+        //判断模拟历史长度激活或禁用回退按钮
+        function isUseReturnButton(len){
+            if(len > 1){
+                returnBackButton.removeClass("buttonDisabled");
+            }else{
+                returnBackButton.removeClass("buttonDisabled").addClass("buttonDisabled");
+            }
+        }
+
+    }
+    //hash转换
+    function getHash(hash){
+        var	data,
+                key,
+                params,
+                hashAns,
+                i;
+        if(!!hash){
+            var hashAns = "/"
+            data = hash.substring(1).split("&");
+            // 判断网站是否开启“启用网站html静态化”功能，转换为对应的路径格式，如：/h-pd-12-341.html
+            if(data[0].split("=")[1].indexOf("h-") != -1){
+                hashAns += data[0].split("=")[1] + ".html";
+            }else{
+                hashAns += data[0].split("=")[1] + ".jsp";
+            }
+
+            if(!!data[1]){
+                params = $.parseJSON(decodeURI(data[1].replace("data=", "")));
+                hashAns += "?" ;
+                for( key in params){
+                    hashAns +=  key + "=" + params[key] + "&";
+                }
+                hashAns = hashAns.substring(0,hashAns.length-1);
+            }
+        }
+        return hashAns;
+    }
+
+
+</script>
+</html>

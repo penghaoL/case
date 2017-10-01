@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+      ul li{
+        list-style: none;
+        float: left;
+        padding: 8px 20px;
+        background-color: beige;
+        margin: 0px 5px;
+      }
+      ul li a{
+       text-decoration: none;
+
+      }
+	</style>
+</head>
+<body>
+   <div id="box">
+	  <ul id="list">
+		<li><a href="#">百度</a></li>
+		<li><a href="#">百度</a></li>
+		<li><a href="#">百度</a></li>
+		<li><a href="#">百度</a></li>
+		<li><a href="#">百度</a></li>
+		<li><a href="#">百度</a></li>
+		<li><a href="#">百度</a></li>
+	  </ul>
+	</div>
+	<script src="tools..js"></script>
+	<script>
+            var ul = getId("list");
+            var aArr = ul.getElementsByTagName("a");
+
+            for(var i=0;i<aArr.length;i++){
+                aArr[i].onclick = function () {
+                    //点击哪个a链接，让他的父亲添加类
+                    this.parentNode.style.backgroundColor = "red";
+                    //设置他的父元素的其他所有兄弟节点类名为空
+                    var otherArr = otherArr(this.parentNode);
+                    for(var j=0;j<otherArr.length;j++){
+                        otherArr[j].style.backgroundColor = "beige";
+                    }
+                }
+            }
+
+	</script>
+</body>
+</html>

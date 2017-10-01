@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+     button{
+         width: 100px;
+         height: 40px;
+
+
+     }
+     .abc{
+     	background-color: yellow;
+
+     }
+	</style>
+</head>
+<body>
+	<button>按钮1</button>
+	<button>按钮2</button>
+	<button>按钮3</button>
+	<button>按钮4</button>
+	<button>按钮5</button>
+	<script>	
+       var btn = document.getElementsByTagName("button");
+       for(var i=0;i<btn.length;i++){
+       	btn[i].setAttribute("title",i);
+       	btn[i].onmouseover = function(){
+       		for(var j=0;j<btn.length;j++){
+       			btn[j].className = "";
+       		}
+       		this.className = "abc";
+            alert("我是value值"+this.title);
+       	}
+    
+       }
+       
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+     li{
+     	list-style: none;
+     	width: 100px;
+     	height: 100px;
+     	background-color:pink;
+     	margin: 5px;
+
+     }
+	</style>
+</head>
+<body>
+	<ul>
+     <li class="box1"></li>
+     <li id="box2"></li>
+     <li class="box3"></li>
+     <li class="box4"></li>
+     <li class="box5"></li>
+	</ul>
+	<script>
+       var box  =document.getElementById("box2");
+        // box.parentNode.style.backgroundColor = "black";
+        // box.previousElementSibling.style.backgroundColor = "red";
+        // box.nextElementSibling.style.backgroundColor = "yellow";
+       var par = box.parentNode
+       var pre = box.previousElementSibling || box.previousSibling;
+       var net = box.nextElementSibling || box.nextSibling;
+       pre.style.backgroundColor = "red";
+       net.style.backgroundColor = "red";
+       par.style.backgroundColor = "black";
+	</script>
+</body>
+</html>

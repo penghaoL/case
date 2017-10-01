@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #eee;
+        }
+        div{
+            width: 200px;
+            margin:0 auto;
+            margin-top:100px;
+            position: absolute;
+            top:50%;
+            margin-top:-91px;
+            left:50%;
+            margin-left:-100px;
+            text-align: center;;
+        }
+        span {
+            padding: 0;
+            margin:0;
+            display: inline-block;
+            width: 200px;
+            height: 183px;
+            background-color: rgba(0,0,0,0.2);
+            position: absolute;
+            top:0;
+            display: none;
+            font-size:50px;
+            color:#fff;
+            text-align: center;
+            line-height: 183px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+      <div>
+          <img src="ps.png" alt="" width="200px"/>
+          <span>--PS--</span>
+      </div>
+      <script>
+          var div = document.getElementsByTagName("div")[0];
+          var span = document.getElementsByTagName("span")[0];
+          div.onmouseover = function(){
+              span.style.display = "block";
+          }
+          div.onmouseout = function(){
+              span.style.display = "none";
+          }
+
+      </script>
+</body>
+</html>

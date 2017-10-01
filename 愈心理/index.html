@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>yu心理-你心灵的加油站</title>
+	<link rel="icon" href="favcion.ico">
+	<style type="text/css">
+	body,ul,li,a,input,button{
+		padding: 0px;
+		margin: 0;
+	}
+	body{
+		background-color:rgba(225,225,225,0);
+	}
+     .nav{
+     	height: 50px;
+     	width: 100%;
+     	background-color: #459DF5;
+     	box-shadow: 2px	 2px 5px rgba(0,0,0,1);
+     	position: relative;
+
+     }
+     .w{
+     	width: 1200px;
+     	height: 50px;
+     	margin: 0 auto;
+     }
+     .nav .w{
+     	width: 1200px;
+     	height: 50px;
+     	margin: 0 auto;
+
+     }
+     .nav .w .logo-01 a{
+     	display: inline-block;
+     	height: 50px;
+     	width: 100px;
+     	background: url(image/logo.jpg);
+     	line-height: 50px;
+     	text-decoration: none;
+     	text-indent: -99999px;
+     	float: left;
+     }
+     .nav .w .nav-list ul li{
+     	list-style:none;
+     }
+     .nav .w .nav-list a{
+     	line-height: 50px;
+     	
+     	text-decoration: none;
+     	font-size: 17px;
+     	padding: 0 15px;
+     	float: right;
+        color: #fff;
+     }
+     .nav .w .nav-list a:hover{
+     
+text-shadow: 2px 2px 5px #000;
+     }
+     
+     /*.side-l{
+        border-top: 2px #aaa solid;
+     	height: 400px;
+     	background-color: rgba(0,0,0,0.6);
+     	margin: 0 auto;
+     	background: url(image/5718295a6d6bd.jpg) no-repeat center;
+     	position: relative;
+     	background-size: 90% 400px;
+     	margin-top: 3px;
+     	clear: both;
+     }
+     .side-l .side-d{
+     	width: 90%;
+     	height: 40px;
+      position: absolute;
+      bottom: 0px;
+      background-color: rgba(0,0,0,0.6);
+      color: rgba(255,255,255,0.8);
+      text-align: right;
+      line-height: 40px;
+      font-family: "微软雅黑";
+      font-size: 16px;
+      padding:10px 0;
+      left: 5%;
+     }
+     .side-l .side-d .w {
+     	border-right:2px #FFFF00 solid;
+     	height: 40px;
+     	width: 90%;
+     }
+     .side-l .text-01{
+     	color: #fff;
+     	font-size: 30px;
+     	margin-left: 100px;
+        margin-top: 30px;
+     	text-shadow: 3px 3px 3px rgba(255,255,255,0.9);
+     }*/
+     .side-l{
+     	height: 500px;
+     	width: 90%;
+     	background: url(image/5718295a6d6bd.jpg)no-repeat;
+     	margin: 0 auto;
+     	position: relative;
+        margin-top: 10px;
+        background-size:100% 500px;
+        text-shadow:10px 10px 10px rgba(0,0,0,0.5);
+     }
+     .side-l .side-d a{
+     	color:#aaa;
+     	text-decoration: none;
+     }
+     .side-l .side-d a:hover{
+     	color:#000;
+     	text-shadow: 1px 1px 3px #fff;
+     }
+     .side-l .side-d{
+     	width: 100%;
+     	height: 40px;
+     	background-color: rgba(0,0,0,0.4);
+     	line-height: 40px;
+     	color: #fff;
+        position: absolute;
+        bottom: 0;
+        text-align: right;
+        border-bottom: 5px #000 solid;
+     }
+     .list-b-text{
+     	height: 307px;
+     	width: 35%;
+     	background-color: #eee;
+     	
+     	color:#fff;
+     	
+     	line-height: 50px;
+
+     }
+     .list-b-title{
+     	
+        text-shadow: 1px 1px 2px #000;
+     	height: 40px;
+     	padding-left: 20px;
+        background-color:rgba(0,0,0,0.5);
+        line-height: 40px;
+     }
+     ul,li,h3,p{
+     	list-style: none;
+     }
+     .list-b-text .list-b-w ul li{
+     	border-bottom: 1px #aaa dashed;
+     	height: 35px;
+     }
+     .list-b-text .list-b-w ul li a{
+        
+        color:rgba(0,0,0,0.5);
+        text-decoration: none;
+        padding-left: 20px;
+        height: 10px;
+        line-height: 40px;
+        
+
+     }
+     .list-b-text .list-b-w ul li a:hover{
+     	color:#aaa;
+
+     }
+     .buttom-text{
+     width:90%;
+     margin:0 auto;
+     }
+     .list-b-text{
+     	float: right;
+     	margin-top:10px;
+     	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+     }
+     .buttom-text .list-b-l{
+     	width: 65%;
+     	height: 307px;
+     	background-color:rgba(0,0,0,0.1);
+     	float: left;
+     	margin-top: 10px;
+     	border-radius: 250px 0 0 250px;
+     	text-align: center;
+     	background:url(image/58510c5844626.jpg)no-repeat center;
+     	
+     	color: #fff;
+     	font-size: 35px;
+     }
+     .buttom-text .list-b-l a{
+     	font-size: 50px;
+     	text-decoration: none;
+     	text-shadow: 5px 5px 10px #000;
+        color: #eee;
+     }
+     .buttom-text .list-b-l a:hover{
+         color:rgba(225,225,225,0.9);
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     .list-b-text-02{
+     	height: 307px;
+     	width: 35%;
+     	background-color:rgba(236,0,0,0.1);
+     	
+     	color:#fff;
+     	
+     	line-height: 50px;
+
+     }
+     .list-b-title-02{
+     	
+        text-shadow: 1px 1px 2px #000;
+     	height: 40px;
+     	padding-left: 20px;
+        background-color:rgba(157,9,9,0.8);
+        line-height: 40px;
+     }
+     ul,li,h3,p{
+     	list-style: none;
+     }
+     .list-b-text-02 .list-b-w-02 ul li{
+     	border-bottom: 1px #aaa dashed;
+     	height: 35px;
+     }
+     .list-b-text-02 .list-b-w-02 ul li a{
+        
+        color: rgba(0,0,0,0.5);
+        text-decoration: none;
+        padding-left: 20px;
+        height: 10px;
+        line-height: 40px;
+        
+
+     }
+     .list-b-text-02 .list-b-w-02 ul li a:hover{
+     	color:#aaa;
+     }
+     .buttom-text-02{
+     width:90%;
+     margin:0 auto;
+     }
+     .list-b-text-02{
+     	float: left;
+     	margin-top:10px;
+     	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+     }
+     .buttom-text-02 .list-b-l-02{
+     	width: 65%;
+     	height: 307px;
+     	background-color:rgba(0,0,0,0.1);
+     	float: right;
+     	margin-top: 10px;
+     	border-radius:0 250px 0 0;
+     	text-align: center;
+     	background:url(image/56ce6cd72df7f.jpg)no-repeat center;
+     	
+     	color: #fff;
+     	font-size: 50px;
+     }
+     .buttom-text-02 .list-b-l-02 a{
+     	font-size:35px;
+     	
+     	text-decoration: none;
+     	text-shadow: 5px 5px 10px #000;
+        color:rgba(0,0,0,0.5);
+     }
+     .buttom-text-02 .list-b-l-02 a:hover{
+         color: #eee;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .list-b-text-03{
+     	height: 307px;
+     	width: 35%;
+     	background-color:rgba(0,0,0,0.4);
+     	
+     	color:#fff;
+     	
+     	line-height: 50px;
+
+     }
+     .list-b-title-03{
+     	
+        text-shadow: 1px 1px 2px #000;
+     	height: 40px;
+     	padding-left: 20px;
+        background-color:rgba(0,0,0,0.5);
+        line-height: 40px;
+     }
+     ul,li,h3,p{
+     	list-style: none;
+     }
+     .list-b-text-03 .list-b-w-03 ul li{
+     	border-bottom: 1px #aaa dashed;
+     	height: 35px;
+     }
+     .list-b-text-03 .list-b-w-03 ul li a{
+        
+        color: rgba(0,0,0,0.5);
+        text-decoration: none;
+        padding-left: 20px;
+        height: 10px;
+        line-height: 40px;
+        
+
+     }
+     .list-b-text-02 .list-b-w-02 ul li a:hover{
+     	color:#aaa;
+     }
+     .buttom-text-03{
+     width:90%;
+     margin:0 auto;
+     }
+     .list-b-text-03{
+     	float: left;
+     	margin-top:10px;
+     	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+     }
+     .buttom-text-03 .list-b-l-03{
+     	width: 65%;
+     	height: 307px;
+     	background-color:rgba(0,0,0,0.1);
+     	float: right;
+     	margin-top: 10px;
+     	border-radius:0  0 250px 0 ;
+     	text-align: center;
+     	background:url(image/57c15482c87d2.jpg)no-repeat center ;
+     	/*background-size: 100% 357px;*/
+     	color: #fff;
+     	font-size: 50px;
+     }
+     .buttom-text-03 .list-b-l-03 a{
+     	font-size:35px;
+     	
+     	text-decoration: none;
+     	text-shadow: 5px 5px 10px #000;
+        color:rgba(225,225,225,0.9);
+     }
+     .buttom-text-03 .list-b-l-03 a:hover{
+         color: #eee;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+     .list-b-text-04{
+     	height: 307px;
+     	width: 35%;
+     	background-color: #eee;
+     	
+     	color:#fff;
+     	
+     	line-height: 50px;
+
+     }
+     .list-b-title-04{
+     	
+        text-shadow: 1px 1px 2px #000;
+     	height: 40px;
+     	padding-left: 20px;
+        background-color:rgba(0,0,0,0.5);
+        line-height: 40px;
+     }
+     ul,li,h3,p{
+     	list-style: none;
+     }
+     .list-b-text-04 .list-b-w-04 ul li{
+     	border-bottom: 1px #aaa dashed;
+     	height: 35px;
+     }
+     .list-b-text-04 .list-b-w-04 ul li a{
+        
+        color:rgba(0,0,0,0.5);
+        text-decoration: none;
+        padding-left: 20px;
+        height: 10px;
+        line-height: 40px;
+        
+
+     }
+     .list-b-text-04 .list-b-w-04 ul li a:hover{
+     	color:#aaa;
+
+     }
+     .buttom-text-04{
+     width:90%;
+     margin:0 auto;
+     }
+     .list-b-text-04{
+     	float: right;
+     	margin-top:10px;
+     	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+     }
+     .buttom-text-04 .list-b-l-04{
+     	width: 65%;
+     	height: 307px;
+     	background-color:rgba(0,0,0,0.1);
+     	float: left;
+     	margin-top: 10px;
+     	border-radius: 250px 250px 250px 250px;
+     	text-align: center;
+     	background:url(image/57c1547e7ca1c.jpg)no-repeat center;
+     	font-size: 30px;
+     	color: #fff;
+     	
+     	box-shadow: -20px -20px 20px rgba(0,0,0,0.9) inset,
+     	            20px 20px 20px rgba(0,0,0,0.9) inset;
+     }
+     .buttom-text-04 .list-b-l-04 a{
+     	font-size: 60px;
+     	text-decoration: none;
+     	text-shadow: 5px 5px 10px #000;
+        color: #eee;
+     }
+     .buttom-text-04 .list-b-l-04 a:hover{
+         color:rgba(225,225,225,0.9);
+     }
+
+
+     /*foot开始*/
+     .footer{
+     	height: 300px;
+     	width: 100%;
+     	float: left;
+     	background-color: #eee;
+     	margin-top: 20px;
+     	text-align: center;
+
+     }
+     .footer .foot-list .w a{
+     	display: inline-block;
+     	line-height: 50px;
+     	padding: 0 15px;
+     	color: #aaa;
+     	text-decoration: none;
+     	
+     }
+     .footer .foot-list .w a:hover{
+     	color: #000;
+     }
+	</style>
+</head>
+<body>
+	<div class="nav">
+     <div class="w">
+        <div class="logo-01"><a href="#">yu心理</a></div>
+        <div class="nav-list">
+            <ul>
+            	<li>
+            	    <a href="#">登录/注册</a>
+            		<a href="#">文章</a>
+            		<a href="#">yu心音乐</a>
+            		<a href="#">视频</a>
+            		<a href="#">图片</a>
+            		<a href="#">至美萌物</a>
+            		<a href="#">预约咨询</a>
+            	</li>
+            </ul>
+        </div>
+     </div>
+	</div>
+	<!-- <div class="side-l">
+      <div class="text-01">
+       yu心理
+      </div>
+      <div class="side-d">
+      <div class="w">好像没有什么再能够轻易打动我，我没有大悲大喜，只是站在温暖的阳光下觉得好安逸，仅此而已。
+      </div>
+	</div> -->
+	<div class="side-l">
+      <div class="side-d"><a href="#">好像没有什么再能够轻易打动我，我没有大悲大喜，只是站在温暖的阳光下觉得好安逸，仅此而已。</a>
+      </div>
+	</div>
+
+    <div class="buttom-text">
+       <div class="list-b-l">
+        <p>愈心理</p>
+        <a href="#">为什么你找不到改变自己的动力？</a>
+       </div>
+
+	   <div class="list-b-text">
+          <div class="list-b-title">每日文章推荐</div>
+          <div class="list-b-w">
+             <ul>
+     	       <li><a href="#">无法建立亲密关系？或许是因为有一个假自我</a></li>
+               <li><a href="#">《奇葩说》上，她说出了中国家庭普遍的痛点</a></li>
+               <li><a href="#">心理咨询师写给女婿的信：我不会让你一定要对女儿好</a></li>
+               <li><a href="#">父亲，是你决定了女儿会不会遇到渣男</a></li>
+               <li><a href="#">为什么在婚姻中感觉不到爱了？ 或许这本书能给你答案</a></li>
+             </ul>		
+          </div>	
+     
+      </div>
+	</div>
+
+
+	<div class="buttom-text-02">
+       <div class="list-b-l-02">
+        <p>情侣专区</p>
+        <a href="#">为什么两个人在一起久了，会觉得越来越无聊？</a>
+       </div>
+
+	   <div class="list-b-text-02">
+          <div class="list-b-title-02">情侣精选</div>
+          <div class="list-b-w-02">
+             <ul>
+     	       <li><a href="#">这样拒绝对方，才不会伤害到他</a></li>
+               <li><a href="#">姐弟恋，适合你吗？</a></li>
+               <li><a href="#">如果你身边有个擅长指责你的人，你只需要这么做……</a></li>
+               <li><a href="#">心理咨询师给女儿的信：爱上什么样的人最幸福？</a></li>
+               <li><a href="#">我爱他，但我要不要嫁他呢？</a></li>
+             </ul>		
+          </div>	
+     
+      </div>
+	</div>
+
+
+
+
+	<div class="buttom-text-03">
+       <div class="list-b-l-03">
+        <p>婚姻课堂</p>
+        <a href="#">什么样的男人不容易出轨？</a>
+       </div>
+
+	   <div class="list-b-text-03">
+          <div class="list-b-title-03">婚恋讲堂</div>
+          <div class="list-b-w-03">
+             <ul>
+     	       <li><a href="#">这样拒绝对方，才不会伤害到他</a></li>
+               <li><a href="#">姐弟恋，适合你吗？</a></li>
+               <li><a href="#">如果你身边有个擅长指责你的人，你只需要这么做……</a></li>
+               <li><a href="#">心理咨询师给女儿的信：爱上什么样的人最幸福？</a></li>
+               <li><a href="#">我爱他，但我要不要嫁他呢？</a></li>
+             </ul>		
+          </div>	
+     
+      </div>
+	</div>
+
+
+
+
+
+	<div class="buttom-text-04">
+       <div class="list-b-l-04">
+        <p>预约咨询</p>
+        <a href="#">选择心仪咨询师</a>
+       </div>
+
+	   <div class="list-b-text-04">
+          <div class="list-b-title-04">我要倾诉</div>
+          <div class="list-b-w-04">
+             <ul>
+     	       <li><a href="#">这样拒绝对方，才不会伤害到他</a></li>
+               <li><a href="#">姐弟恋，适合你吗？</a></li>
+               <li><a href="#">如果你身边有个擅长指责你的人，你只需要这么做……</a></li>
+               <li><a href="#">心理咨询师给女儿的信：爱上什么样的人最幸福？</a></li>
+               <li><a href="#">我爱他，但我要不要嫁他呢？</a></li>
+             </ul>		
+          </div>	
+     
+      </div>
+	</div>
+
+	<div class="footer">
+        <div class="foot-list">
+        <div class="w">
+         <ul>
+          <a href="#">加入我们</a> 
+          <a href="#">联系我们</a> 
+          <a href="#">关于我们</a> 
+          <a href="#">免责声明</a> 
+          <a href="#">联系我们</a> 
+          <a href="#">友情链接</a> 
+          <a href="#">加入我们</a> 
+         </ul>
+         </div>
+        </div>
+	</div>
+	
+</body>
+</html>

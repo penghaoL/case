@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box" value="111">你好</div>
+	<script>
+      var ele = document.getElementById("box");
+      var att = ele.getAttributeNode("id");
+      var   txt = ele.firstChild;
+      
+      console.log(ele.nodeValue);
+      console.log(att.nodeValue);
+      console.log(txt.nodeValue);
+      
+	</script>
+</body>
+</html>

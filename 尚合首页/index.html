@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>尚合手机网</title>
+    <style>
+        *,a,ul,li,h6{
+            margin:0;
+            padding:0;
+        }
+
+        ul{
+            list-style:none;
+        }
+        img{
+            margin:0 ;
+            padding:0;
+        }
+
+        .top{
+            height: 62px;
+        }
+        .w{
+            width: 980px;
+            margin:0 auto;
+        }
+        .top .w{
+            height: 62px;
+        }
+        .top .w img{
+            margin-top:20px;
+        }
+        .nav{
+            height: 55px;
+            background-color: #eee;
+            background-image: url(images/nav-bg.png);
+            border-top:1px solid #eee;
+        }
+        .nav .w{
+            height: 55px;
+
+        }
+        .nav .w ul li{
+            float: left;
+        }
+        .nav .w ul li a{
+            display: inline-block;
+            line-height: 55px;
+            color:#000;
+            text-decoration: none;
+            padding:0 42px;
+            font-size:14px;
+            font-weight: 700;
+            background: url(images/nav-line.png)  no-repeat right top;
+        }
+        .nav .w ul li a:hover{
+            color:#91BB35;
+        }
+        .news{
+            height: 29px;
+            background-color: #FBFBFB;
+            border-top:1px solid #EFEFEF;
+            border-bottom:1px solid #EFEFEF;
+
+        }
+        .news .w{
+            height: 29px; background-color: #FBFBFB;
+        }
+        .list {
+            height: 277px;
+            margin-top: 10px;
+        }
+        .list .w{
+            height: 224px;
+
+        }
+        .footer{
+            height: 306px;
+            background-color: #000;
+        }
+        .hot{
+            width: 27px;
+            height: 20px;
+            background:  url(images/hot.png)  no-repeat;
+            position: relative;
+            left:310px;
+            top:-10px;
+        }
+        .new{
+            width: 27px;
+            height: 20px;
+            background:  url(images/new.png)  no-repeat;
+            position: relative;
+            left:432px;
+            top:-30px;
+        }
+        .news .w .new-l{
+            font-size:13px;
+            line-height: 29px;
+            font-weight:700;
+            float: left;
+        }
+
+        .news .w .new-l a{
+            text-decoration: none;
+            font-weight:normal;
+            color:#000;
+            font-size:12px;
+        }
+        .news .w  .new-r{
+            width: 88px;
+            height: 19px;
+            background:  url(images/share.png)  no-repeat ;
+            float: right;
+            margin-top:5px;
+
+        }
+        .list-l{
+            width: 310px;
+            height: 224px;
+            float: left;
+            border:1px solid #E4E4E4;
+            background:  url(images/pic.png)  no-repeat center center;
+        }
+        .list-l h6{
+            margin-top:8px;
+            color:#91BB35;
+            margin-left: 6px;;padding-left: 21px;
+            background:  url(images/arrow.png) 0 0 no-repeat;
+        }
+        .list-c h6{
+            margin-top:8px;
+            color:#91BB35;
+            margin-left: 6px;;padding-left: 21px;
+            background:  url(images/arrow.png) 0 0 no-repeat;
+        }
+        .list-r h6{
+            margin-top:8px;
+            color:#91BB35;
+            margin-left: 6px;;padding-left: 21px;
+            background:  url(images/arrow.png) 0 0 no-repeat;
+        }
+        .list-c{
+            width: 373px;
+            height: 224px;
+            float: left; margin-left:10px;
+            border:1px solid #E4E4E4;
+        }
+        .list-r{
+            width: 269px;
+            height: 224px;
+            float: right;
+            border:1px solid #E4E4E4;
+
+        }
+        .list-c ul{
+            width: 352px;
+            margin:0 auto;
+            margin-top:13px;
+        }
+        .list-c ul li {
+            font-size:12px;
+            height: 28px;
+            width: 352px;
+            line-height: 28px;
+            border-bottom: 1px dashed #ccc;
+        }
+        .list-c ul li a{
+            display: inline-block;
+            text-decoration: none;
+            height: 17px;
+            line-height: 17px;
+            color:#666666;
+
+        }
+        #red a{
+            color:red;
+            font-weight:700;
+            text-decoration: none;
+        }
+        .list-c ul li a:hover{
+            color:#91BB35;
+            text-decoration: underline;
+
+
+        }
+        .list-r ul li a{
+            display: inline-block;
+            font-size:12px;
+            margin-left: 28px;
+            border-left: 3px;
+            border-left:3px solid #91BB35;
+            padding-left:4px;
+            color:#000;
+            text-decoration: none;
+        }
+        .list-r ul{
+            margin-top:8px;
+        }
+        #r-text a{
+            border:0;
+            margin-top:42px;
+            cursor:text;
+        }
+        .footer{
+            background:#2D2D2D  url(images/footer-bg.png) repeat no-repeat;
+            overflow: hidden;
+        }
+        .footer-top{
+            width: 100%;
+            height: 221px;
+            border-bottom:1px dashed #414141;
+        }
+        .footer ol{
+            float: left;
+            width: 108px;
+        }
+        .footer ol dd{
+            font:normal normal 13px "Microsoft Yahei";
+            color:#C7C7C7;
+            margin-top:16px;
+        }
+        .footer ol dt{
+            font-size: 10px;
+            line-height: 20px;
+
+        }
+        .footer ol dt:nth-child(2){
+            margin-top:12px;
+
+        }
+        .footer ol dt a{
+            text-decoration: none;
+            color:#70705A;
+        }
+        .footer-top .w ol:first-child{
+            margin-left: 16px;
+        }
+        .footer ol dt a:hover{
+            text-decoration:underline;
+        }
+        .footer-top img{
+            float: right;
+        }
+        .footer-bottom{
+            text-align: center;
+            font-size:12px;
+            line-height: 30px;
+        }
+        .top img{
+            float: left;
+        }
+        .top-r{
+            width: 196px;
+            height: 30px;
+            float: right;
+            background-color: #000;
+            margin-top:21px;
+        }
+        .top-r input{
+            width: 161px;
+            height: 30px;
+            float: left;
+            border:0;
+            background: url(images/input.png) no-repeat;
+            padding-left: 5px;color:#aaa;
+            outline: none;
+        }
+        button{
+            width: 30px;
+            height: 30px;
+            background-color: #eee;
+            float: right;
+            border:0;
+            background: url(images/button.png) no-repeat;
+            outline: none;
+        }
+       .er{
+           width: 106px;
+           height: 148px;
+           float: right;
+           position: absolute;
+           top:21px;
+           right:-132px;
+           background-color: #000;
+       }
+      .main .w{
+          height: 601px;
+          position: relative;
+      }
+        .main img{
+
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+       <div class="top">
+           <div class="w">
+               <img src="images/logo.png" height="24" alt=""/>
+               <div class="top-r">
+                   <input type="text" placeholder="请输入内容..."/>
+                   <button></button>
+               </div>
+           </div>
+       </div>
+       <div class="nav">
+           <div class="w">
+               <ul>
+                   <li><a href="#">首页 </a></li>
+                   <li><a href="#">智能手机</a></li>
+                   <li><a href="#">平板电脑</a></li>
+                   <li><a href="#">配件</a></li>
+                   <li><a href="#">服务支持</a></li>
+                   <li><a href="#">关于尚合</a></li>
+               </ul>
+               <div class="hot"></div>
+               <div class="new"></div>
+           </div>
+       </div>
+       <div class="main">
+           <div class="w"><img src="images/banner.png" alt=""/><div class="er">
+               <img src="images/erweima.png" alt=""/>
+           </div></div>
+
+       </div>
+       <div class="news">
+           <div class="w">
+               <div class="new-l">最新公告: <a href="#">尚合Aone智能手机入网证已经获工信部门审批下发。尚合官方</a></div>
+               <div class="new-r"></div>
+           </div>
+       </div>
+       <div class="list">
+           <div class="w">
+               <div class="list-l">
+                   <h6>新品发布</h6>
+               </div>
+               <div class="list-c">
+                   <h6>新闻中心</h6>
+                   <ul>
+                       <li id="red"><a href="#">致歉公告</a></li>
+                       <li><a href="#">首批尚合Aonet已全部售馨!</a></li>
+                       <li><a href="#">【媒体报导】国产高性价比 尚合Aonet四核手机评测</a></li>
+                       <li><a href="#">我司产品已经通过了国家强制性产品3C认证</a></li>
+                       <li><a href="#">尚合Aone智能手机入网证已经获工信部门审批下发.</a></li>
+                       <li><a href="#">我司通过ISO9001:2008国际质量管理体系认证.</a></li>
+                   </ul>
+               </div>
+               <div class="list-r">
+                   <h6>技术支持</h6>
+                   <ul>
+                       <li><a href="#">售后服务</a></li>
+                       <li><a href="#">投诉建议</a></li>
+                       <li><a href="#">联保网点</a></li>
+                       <li><a href="#">常见问题FAQ?</a></li>
+                       <li id="r-text"><a href="#">深圳市汇聚众合科技发展有限公司
+                           服务热线：400-633-7922</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+       <div class="footer">
+
+              <div class="footer-top">
+                  <div class="w">
+                      <ol>
+                          <dd>尚合首页</dd>
+                          <dt><a href="#">返回首页</a></dt>
+                      </ol>
+                      <ol>
+                          <dd>智能手机</dd>
+                          <dt><a href="#">Aone-T</a></dt>
+                          <dt><a href="#">Aone</a></dt>
+                      </ol>
+                      <ol>
+                          <dd>平板电脑</dd>
+                          <dt><a href="#">尚PAD S200</a></dt>
+                          <dt><a href="#">尚PAD S100</a></dt>
+                          <dt><a href="#">尚PAD SH-Q7</a></dt>
+                          <dt><a href="#">尚PAD SH-Q5</a></dt>
+                      </ol>
+                      <ol>
+                          <dd>平板电脑</dd>
+                          <dt><a href="#">尚PAD S200</a></dt>
+                          <dt><a href="#">尚PAD S100</a></dt>
+                          <dt><a href="#">尚PAD SH-Q7</a></dt>
+                          <dt><a href="#">尚PAD SH-Q5</a></dt>
+                      </ol>
+                      <ol>
+                      <dd>平板电脑</dd>
+                      <dt><a href="#">尚PAD S200</a></dt>
+                      <dt><a href="#">尚PAD S100</a></dt>
+                      <dt><a href="#">尚PAD SH-Q7</a></dt>
+                      <dt><a href="#">尚PAD SH-Q5</a></dt>
+                  </ol>
+                      <ol>
+                          <dd>平板电脑</dd>
+                          <dt><a href="#">尚PAD S200</a></dt>
+                          <dt><a href="#">尚PAD S100</a></dt>
+                          <dt><a href="#">尚PAD SH-Q7</a></dt>
+                          <dt><a href="#">尚PAD SH-Q5</a></dt>
+                      </ol>
+                      <ol>
+                          <dd>平板电脑</dd>
+                          <dt><a href="#">尚PAD S200</a></dt>
+                          <dt><a href="#">尚PAD S100</a></dt>
+                          <dt><a href="#">尚PAD SH-Q7</a></dt>
+                          <dt><a href="#">尚PAD SH-Q5</a></dt>
+                      </ol>
+                      <img src="images/back.png" />
+                   </div>
+              </div>
+
+           <div class="footer-bottom">
+               <span>©2011-2012版权所有 深圳市汇聚众合科技发展有限公司 （品牌：尚合-SAMHAVE） 服务热线：400-633-7922 </span><br />
+               <span>经营许可证编号：粤ICP备11077821号-1 </span><br />
+               <img src="images/icon1.png" /><img src="images/icon2.png" />
+           </div>
+       </div>
+       <script>
+            var red = document.getElementById("red");
+            var body = document.getElementsByTagName("body")[0];
+            red.onclick = function(){
+                body.style.backgroundColor = "skyblue";
+
+            }
+           var arr = document.getElementsByTagName("red");
+       </script>
+</html>

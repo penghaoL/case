@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        ul,li,span,a,button{
+            margin:0;
+            padding:0;
+        }
+        #main button{
+            border:0 solid #000;
+            float: right;
+            background-color: rgba(0,0,0,0.5);
+            color:#fff;
+            cursor:pointer;
+
+        }
+        body{
+            margin:0;
+            padding:0;
+            background-image: url(images/1502788575724.jpg);
+            background-size: auto;
+            background-attachment: fixed;
+
+        }
+        #beijing{
+            float: left;
+            margin-left:-40px;
+            padding:0;
+            font-size:20px;
+
+        }
+        nav{
+            width: 100%;
+            height: 30px;
+            background-color: rgba(0,0,0,0.2);
+            /*margin-top: -16px;;*/
+        }
+        #weifangk{
+
+            margin-left:-210px;
+            margin-top:15px;
+        }
+        #nav-right-blue{
+            padding:0 20px;
+            background-color: #398bfb;
+            border-radius:2px;
+            color:#fff;
+        }
+        #nav-right-blue a{
+            text-decoration: none;
+        }
+        #nav-right li{
+            list-style:none;
+            float: right;
+            height: 30px;
+
+        }
+        #nav-right li a{
+            list-style: none;
+            color:#fff;
+            margin:0 15px;
+            line-height: 27px;
+            font-size:14px;
+            font-weight:500;
+            display:inline-block;
+            font-family: "Microsoft Yahei";
+            
+        }
+       #nav-right-huan{
+
+       }
+        #gang a{
+         text-decoration: none;
+            cursor: default;
+        }
+        #huanfu{
+            width: 100%;
+            height: 500px;
+            background-color: rgba(225, 225, 225, 0.5);
+            display: none;
+            z-index: 10000;
+            position:relative;
+            transition:all 0.6s;
+            
+        }
+       #huanfu #fuanfu-head{
+
+           width: 732px;
+           height: 30px;
+           background-color: rgba(255,255,255,0.8);
+           position: absolute;
+           top:30px;
+           right:30px;
+
+
+        }
+        #huanfu #fuanfu-body{
+            width: 732px;
+            height: 225px;
+            background-color:rgba(255,255,255,0.8);
+            position: absolute;
+            top:60px;
+            right:30px;
+            text-align:center;
+        }
+        table tr td{
+            text-align:center;
+        }
+        tr{
+            width: 60px;
+            background-attachment: fixed;
+            cursor:pointer;
+        }
+        td img:hover{
+            box-shadow: 1px 1px 10px #000;;
+        }
+        #fuanfu-head span{
+            color:#fff;
+            line-height: 30px;;
+            cursor: pointer;
+            float: right;
+            margin:0 20px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.2),
+                         -1px -1px 1px  rgba(0,0,0,0.2);
+        }
+        #moreh{
+            height: 95%;
+            width: 300px;
+            background-color: rgba(255,255,255,0.5);
+            position: relative;
+            top: 30;
+            right:0;
+            display: none;
+            float: right;
+            border-radius: 10px 0 10px 10px;
+            z-index:10000000000;
+
+        }
+        #news{
+            width: 165px;
+            height: 480px;
+            background-color: rgba(255,255,255,0.8);
+            border-radius:5px;
+            position: absolute;
+            top:215px;
+            left:50px;
+            border:1px solid #999999;
+            z-index:100000000;
+
+        }
+        #news:hover{
+            box-shadow:4px 4px 4px rgba(0,0,0,0.15),
+                       -4px 4px 4px rgba(0,0,0,0.15),
+                       4px -4px 4px rgba(0,0,0,0.15),
+                       -4px -4px 4px rgba(0,0,0,0.15);
+        }
+        #news-head{
+            width: 100%;
+            height: 40px;
+            background-color:rgba(255,255,255,0.1);
+        }
+        #news-head span {
+            width: 165px;
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            color:#fff;
+            text-align: center;
+            background-color: rgba(0,0,0,0.5);
+        }
+        #news-head span:hover {
+            cursor: pointer;
+            background-color: rgba(0,0,0,0.5);      
+        }
+        #news-head a{
+            display: inline-block;
+            text-align: center;
+            width: 165px;
+            height: 40px;
+            line-height: 40px;
+            text-decoration: none;
+            color:#eee;
+            background-color: rgba(0,0,0,0.3);
+        }
+        #news-head a:hover{
+            background-color: rgba(0,0,0,0.4);
+            color:#fff;
+        }
+        #moreh ul li {
+            list-style: none;
+            float: left;
+        }
+        #moreh ul li a{
+            text-decoration: none;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color:rgba(0,0,0,0.5);
+            border-radius: 12px;
+            color: #fff;
+            margin:12px;
+            line-height: 50px;
+            text-align: center;
+            background-size: 50px 50px;
+            text-indent: -999999px;
+        }
+        h3{
+            padding-left: 115px;
+            color:#aaa;
+        }
+        #main{
+            width: 60%;
+            height: 480px;
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            position:absolute;
+            right: 100px;
+            z-index=-1;
+            top:215px;
+            background-image:url(images/1502788565337.jpg);
+            background-size: 100% 100%;
+            opacity:0.2;
+            filter: blur(px);
+            border:1px solid rgba(0,0,0,0.5);
+        }
+        #qiehuan{
+            width: 20px;
+            height: 480px;
+            background-color: black;
+            border-radius: 15px;
+            outline: none;
+            filter: blur(0px);
+        }
+        button:active{
+            border:0px solid #000;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <iframe id="beijing" name="sinaWeatherTool" src="http://weather.news.sina.com.cn/chajian/iframe/weatherStyle0.html?city=%E5%8C%97%E4%BA%AC"   frameborder="0" scrolling="no"></iframe>
+    <ul id="nav-right">
+        <li id="nav-right-blue"><a href="#">更多产品</a></li>
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">前端素材</a></li>
+        <li><a href="http://www.hao123.com" target="_blank">hao123</a></li>
+        <li><a href="#">图片</a></li>
+        <li id="gang"><a href="#">|</a></li>
+        <li id="nav-right-huan" alt="1"><a href="#">换肤</a></li>
+
+    </ul>
+    <div id="huanfu" ">
+        <div id="fuanfu-head" >
+            <span>↑收起</span>
+        </div>
+        <div id="fuanfu-body">
+            <!--<img src="images/1502782171227.jpg" alt="" width="200" />-->
+            <table cellpadding="1" cellspacing="0">
+                <tr>
+                    <td colspan="2" rowspan="2"><img  src="images/1502782171227.jpg" alt="" width="240" title="images/1502782171227.jpg"/></td>
+                    <td><img src="images/1502788565337.jpg" alt="" width="120" /></td>
+                    <td><img src="images/1502782166669.jpg" alt="" width="120" /></td>
+                    <td><img src="images/1502782180845.jpg" alt="" width="120" /></td>
+                    <td><img src="images/1502782200984.jpg" alt="" width="120" /></td>
+                </tr>
+                <tr>
+                    <td><img src="images/150278219279.jpg" alt="" width="120" /></td>
+                    <td colspan="2" rowspan="2"><img src="images/150278857376.jpg" alt="" width="240" /></td>
+                    <td><img src="images/1502788570745.jpg" alt="" width="120" /></td>
+                </tr>
+                <tr>
+                    <td><img src="images/1502788567284.jpg" alt="" width="120" /></td>
+                    <td><img src="images/1502788562133.jpg" alt="" width="120" /></td>
+                    <td><img src="images/1502788575724.jpg" alt="" width="120" /></td>
+                    <td><img src="images/1502788571647.jpg" alt="" width="120" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</nav>
+   <div id="moreh">
+
+       <ul>
+           <li><a href="http://www.baidu.com" target="_blank" style="background-image:url(images/1.jpg);">百度</a></li>
+           <li><a href="https://www.dianping.com" target="_blank" style="background-image:url(images/2.jpg);">百度</a></li>
+           <li><a href="http://www.juanpi.com" target="_blank" style="background-image:url(images/3.jpg);">百度</a></li>
+           <li><a href="https://tieba.baidu.com" target="_blank" style="background-image:url(images/4.jpg);">百度</a></li>
+           <li><a href="#" target="_blank" style="background-image:url(images/5.jpg);">百度</a></li>
+           <li><a href="https://v.qq.com/" target="_blank" style="background-image:url(images/6.jpg);">百度</a></li>
+           <li><a href="https://www.pinduoduo.com" target="_blank" style="background-image:url(images/7.jpg);">百度</a></li>
+           <li><a href="http://t.shuqi.com" target="_blank" style="background-image:url(images/8.jpg);">百度</a></li>
+           <li><a href="http://bj.ganji.com" target="_blank" style="background-image:url(images/9.jpg);">百度</a></li>
+           <li><a href="http://bj.meituan.com" target="_blank" style="background-image:url(images/10.jpg);">百度</a></li>
+           <li><a href="http://www.mogujie.com" target="_blank" style="background-image:url(images/11.jpg);">百度</a></li>
+           <li><a href="https://www.suning.com" target="_blank" style="background-image:url(images/12.jpg);">百度</a></li>
+           <li><a href="https://www.toutiao.com" target="_blank" style="background-image:url(images/13.jpg);">百度</a></li>
+           <li><a href="https://y.qq.com" target="_blank" style="background-image:url(images/14.jpg);">百度</a></li>
+           <li><a href="http://www.baofeng.com/" target="_blank" style="background-image:url(images/15.jpg);">百度</a></li>
+           <li><a href="http://www.kuwo.cn" target="_blank" style="background-image:url(images/16.jpg);">百度</a></li>
+           <li><a href="http://zhuanzhuan.58.com" target="_blank" style="background-image:url(images/17.jpg);">百度</a></li>
+           <li><a href="https://www.ly.com" target="_blank" style="background-image:url(images/18.jpg);">百度</a></li>
+           <li><a href="https://www.tmall.com" target="_blank" style="background-image:url(images/19.jpg);">百度</a></li>
+           <li><a href="http://www.sohu.com" target="_blank" style="background-image:url(images/20.jpg);">百度</a></li>
+           <li><a href="http://news.qq.com/" target="_blank" style="background-image:url(images/21.jpg);">百度</a></li>
+           <li><a href="http://kuaibao.qq.com/" target="_blank" style="background-image:url(images/22.jpg);">百度</a></li>
+           <li><a href="https://sale.jd.com" target="_blank" style="background-image:url(images/23.jpg);">百度</a></li>
+           <li><a href="https://www.taobao.com/" target="_blank" style="background-image:url(images/24.jpg);">百度</a></li>
+           <!--<li><a href="#" target="_blank" style="background-image:url(images/25.jpg);">百度</a></li>-->
+           <!--<li><a href="#" target="_blank" style="background-image:url(images/26.jpg);">百度</a></li>-->
+           <!--<li><a href="#" target="_blank" style="background-image:url(images/27.jpg);">百度</a></li>-->
+           <!--<li><a href="#" target="_blank" style="background-image:url(images/28.jpg);">百度</a></li>-->
+           <!--<li><a href="#" target="_blank" style="background-image:url(images/29.jpg);">百度</a></li>-->
+           <!--<li><a href="#" target="_blank" style="background-image:url(images/30.jpg);">百度</a></li>-->
+           <!--<li><a href="#" target="_blank" style="background-image:url(images/31.jpg);">百度</a></li>-->
+           <!--<li><a href="#" target="_blank" style="background-image:url(images/32.jpg);">百度</a></li>-->
+       </ul>
+    </div>
+    <div id="news">
+        <div id="news-head">
+            <span>推荐</span>
+            <a href="#">前端资料</a>
+            <a href="#">身边的风景</a>
+            <a href="#">幽默段子</a>
+            <a href="#">喜欢的音乐</a>
+            <a href="#">收藏的电影</a>
+            <a href="#">生活足迹</a>
+            <a href="#">消费账单</a>
+            <a href="#">备忘录</a>
+            <a href="#">愿望与目标</a>
+            <a href="#">话费余额</a>
+            <a href="#">生活至理名言</a>
+        </div>
+    </div>
+    <div id="main">
+         <button id="qiehuan">点击切换</button>
+    </div>
+<iframe id="weifangk" name="sinaWeatherTool" src="http://weather.news.sina.com.cn/chajian/iframe/weatherStyle30.html?city=%E6%BD%8D%E5%9D%8A" width="200" height="200" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
+
+<script>
+    var huanF = document.getElementById("nav-right-huan");
+    var body = document.getElementsByTagName("body")[0];
+    var nav = document.getElementsByTagName("nav")[0];
+    var huanfu  = document.getElementById("huanfu");
+    huanF.onclick = function(){
+        huanfu.style.display = "block";
+
+    }
+//    huanF.onclick = function(){
+    //        this.alt++;
+    //        if(this.alt%2 === 0){
+    //            huanfu.style.display = "block";
+    //        }{
+    //            huanfu.style.display = "none";
+    //        }
+    //
+    //    }
+    console.log(huanF.alt);
+    var shouqi = document.getElementById("huanfu");
+    var shou = shouqi.getElementsByTagName("span")[0];
+    shou.onclick = function(){
+        huanfu.style.display = "none";
+    }
+    var table = document.getElementsByTagName("table")[0];
+    var imgArr = table.getElementsByTagName("img");
+    for(var i=0;i<imgArr.length;i++){
+        imgArr[i].onclick  = function(){
+            body.style.backgroundImage = "url("+this.src+")";
+
+
+        }
+    }
+    var more = document.getElementById("nav-right-blue");
+    var blackh = document.getElementById("moreh");
+    more.onmouseover = function(){
+        blackh.style.display = "block";
+//        this.style.color = "#000";
+//        this.innerHTML = "点击收起";
+    }
+    more.onmouseout = function(){
+        blackh.style.display = "none";
+
+    }
+    blackh.onmouseover = function(){
+        blackh.style.display = "block";
+        this.style.color = "#000";
+    }
+    blackh.onmouseout = function(){
+        blackh.style.display = "none";
+    }
+   var main = document.getElementById("main");
+   var qiehuan = document.getElementById("qiehuan");
+</script>
+</body>
+</html>

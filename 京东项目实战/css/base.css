@@ -1,0 +1,494 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+    color: #666;
+    background:#fff;
+    
+}
+/*初始化浏览器*/
+
+/*导航栏开始*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+
+
+
+    /*导航start*/
+    .site-nav {
+        background-color: #f1f1f1;
+        height: 30px;
+        line-height:30px;
+    }
+    .site-nav-send{
+        padding:0px 25px 0px 10px;
+        position: relative;
+
+    }
+    .site-nav-send:hover{
+        background-color: #fff;
+    }
+    .site-nav-send i {
+           position: absolute;
+           top: 12px;
+           right: 8px;
+           width: 14px;
+           height: 7px;
+           /*background-color: red;*/
+           font:400 23px/15px "consolas";
+           overflow:hidden;
+         
+    }
+    .site-nav-send s {
+     position: absolute;
+     top:-6px;
+
+    }
+    .site-nav-right ul li{
+        float: left;
+        padding:0 11px;
+    }
+    .site-nav-right .line{
+        width: 1px;
+        background-color: #DDD;
+        height: 12px;
+        margin-top:10px;
+        padding:0;
+    }
+    /*导航end*/
+
+    /*banner start*/
+    .top-banner{
+        background-color: #37C2FB;
+    }
+    
+    .top-banner .w{
+        position: relative;
+    }
+    .close-banner{
+        width: 19px;
+        height: 19px;
+        overflow: hidden;
+        position:absolute;
+        top:5px;
+        right: 0;
+    }
+    .close-banner a:hover{
+        position: absolute;
+        top:-19px;
+            }
+    /*banner  结束*/
+    /*输入框start*/
+    .search .w{
+      /*background-color: #eee;*/
+      
+    }
+    .search .w .search-logo{
+        height: 100px;
+        width: 362px;
+        float: left;
+        padding-top: 25px;
+    }
+    .search .w .search-input{
+        padding-top: 25px;
+    }
+    .search .w .search-input input{
+      width: 439px;
+      height: 32px;
+      border:2px solid #B61D1D;
+      float: left;
+      color: #aaa;
+      padding-left:15px;
+    }
+    .search .w .search-input button{
+        float: left;
+        height: 36px;
+        width: 82px;
+        background-color:#B61D1D;
+        color:#fff;
+        font-size:17px;
+        cursor: pointer;
+        
+        
+    }
+    .search .w .search-car{
+        float: right;
+        width: 139px;
+        height: 34px;
+        background-color: #F9F9F9;
+        line-height:34px;
+        text-align: center;
+        position:relative;
+        border:1px solid #aaa;
+        margin-top:-36px;
+        margin-right:45px;
+
+    }
+    .search-car-gwc{
+        float: right;
+        width: 20px;
+        height: 13px;
+        overflow: hidden;
+        position: absolute;
+        top:10px;
+        left: 20px;
+
+
+
+    }
+    .search-car-gwc img{
+        margin-top:-59px;
+    }
+    .search-car-logo{
+        height: 16px;
+        width: 16px;
+        background-color: #B1191A;
+        position:absolute;
+        line-height: 16px;
+        color:#fff;
+        border-radius:8px 8px 8px 0;
+        top: -5px;
+        right: 25px;
+    }
+    .fuhao{
+        position: absolute;
+        right: 25px;
+    }
+    .bu input{
+      width: 100px;
+      height: 50px;
+    }
+    .list{
+        float:left;
+        width: 520px;
+        height: 28px;
+    }
+    .list li a{
+        display: inline-block;
+        padding-right:10px;
+        line-height: 28px;
+    }
+
+    .search{
+        overflow:hidden;
+    }
+    /*kaishi*/
+    
+    .tongyong {
+        height: 511px;
+        width: 210px;
+        background:#C81623;
+        float: left;
+       
+        
+    }
+    .photo2 img{
+     float: right;
+     /*position:absolute;
+     bottom: 0;
+     right: 0px;*/
+     margin-top:-54px;
+     margin-right:36px;
+     
+    }
+    .tongyong-list{
+        height: 464px;
+        width: 201px;
+        padding-left:9px;
+    }
+    .tongyong-list ul li a{
+        color:#fff;
+        font-size:15px;
+        line-height: 31px;
+    }
+    .list-head {
+        border-bottom:3px solid #B61D1D;
+        box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    }
+    .shiyan{
+        height: 44px;
+        width: 201px;
+        background-color:#B61D1D;
+        float:left;
+        margin-right:41px;
+        color:#fff;
+        font-size: 16px;
+        line-height: 44px;
+        padding-left: 9px;
+        font-weight: 600;
+
+       
+    }
+    .list-center{
+        padding-left:16px;
+    }
+    .list-center ul li{
+        font-size:16px;
+        font-weight: 700;
+
+    }
+    .list-center ul li a{
+        display:inline-block;
+        padding-right:41px;
+        line-height: 41px;
+    }
+    #ta a{
+        display: inline-block;
+      padding-left: 15px;
+      float: left;
+    }
+    /*jeishu*/
+    /*kaishi*/
+    
+    .action .w .action-aside{
+        width: 250px;
+        height: 453px;
+        background-color: #fff;
+        float:right;
+         margin-top: 12px;
+        border:1px solid #E8E8E7;
+    }
+    .action-aside-1{
+    height: 32px;
+    background-color: #fff;
+    color:#000;
+    line-height: 32px;
+    font-size: 16px;
+    padding-left: 15px;
+    border-bottom:1px dashed #E8E8E7;
+    }
+    .action-list{
+        line-height: 24px;
+        padding-left: 15px;
+        font-weight:700;
+    }
+    .action-center{
+        float: right;
+        margin-top: 12px;
+        margin-right: 10px;
+    }
+    .teipian img{
+        padding:0 9.5px;
+        border:1px solid  #E8E8E7;
+        float: left;
+
+    }
+    .aside-img img{
+        padding-top: 13px;
+    }
+           /*重点  清除浮动的方法*/
+   .action:after{
+    content:",";
+    height: 0;
+    visibility:hidden;
+    display: block;
+    clear: both;
+   }
+    /*jeishu*/
+    /*输入框end*/
+    /*kaishi*/
+    .foot{
+       margin-top:10px;
+    }
+    .foot-top{
+        height: 54px;
+        background-color: #F5F5F5;
+       /* clear: both;*/
+        padding: 20px 0;
+        position: relative;
+        margin-bottom: 19px;
+        
+
+    }
+    .foot-top .foot-top-slogan-icon3{
+     position:absolute;
+     left: 50%;
+    }
+    .foot-top .foot-top-slogan-icon2{
+        position:absolute;
+        left: 50%;
+        margin-left:-604px;
+    }
+   .foot-top .foot-top-slogan-icon1{
+    position:absolute;
+     left: 50%;
+    margin-left:-302px;
+   }
+    .foot-top .foot-top-slogan-icon4{
+        position:absolute;
+     left: 50%;
+    margin-left:302px;
+   }
+   .foot-center{
+    height: 202px;
+    /*background-color: #666666;*/
+    font-size: 14px;
+    border-bottom:1px solid #E5E5E5;
+   }
+   .foot-center dt{
+    font:400 16px/34px "微软雅黑";
+    line-height: 29px;
+   }
+   .foot-center dl{
+    width: 200px;
+    /*background-color: #eee;*/
+    color:#666666;
+    float: left;
+   }
+   .foot-center dd{
+    line-height: 20px;
+    font-size: 12px;
+   }
+   .foot-center-list5 dl{
+    width: 110px;
+   }
+   .map{
+    width: 203px;
+    height: 169px;
+    float: right;
+    margin-right: 60px;
+    padding-left: 17px;
+    
+    /*background-color: red;*/
+       /* background: url(../image/china.png) no-repeat left bottom;*/
+       background:url(../image/china.png) no-repeat left bottom;
+   }
+   .map h3{
+    font:400 16px/34px 微软雅黑;
+   }
+   .map p{
+    padding-top:18px;
+    font-size:12px;
+   }
+   .map a{
+    float: right;
+   }
+   .foot-bottom{
+    text-align: center;
+    margin:23px 0;
+   }
+   .foot-bottom a{
+    display: inline-block;
+    padding:0 11px;
+   }
+   .foot-bottom span {
+   padding:0 10px;
+   }
+    /*jeishu*/
+body{
+
+    background:url(../image/subbanner.jpg) no-repeat center 275px;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+  
+	body{
+		padding-left: 100px;
+		padding-top: 100px;
+		background:url(image/132.jpg);
+    background-size:100% 100%;
+	}
+	*{
+		margin: 0;
+		padding: 0;
+	}
+     ul li{
+       	list-style: none;
+       	float: left;
+       	margin-top: 10px;
+       	margin-right: 10px;
+       	padding: 0;
+       	height: 70px;
+       }
+       ul li a{
+       	display: inline-block;
+       	box-shadow: 2px 2px 20px #000;
+       	height: 70px;
+       	            
+       	margin: 0;
+       	padding: 0;
+
+       }
+     #big-photo{
+        margin-top: 20px;
+     }
+     button{
+      border: none;
+      cursor: pointer;
+      width: 100px;
+      height: 30px;
+      background-color:rgba(140,70,0,0.7);
+      border-radius: 5px; 
+      margin-top :20px;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.5) inset,
+                  -5px -5px 5px rgba(0,0,0,0.5) inset;
+      outline:none;
+      margin-bottom: 50px;
+      color: rgba(255,255,255,0.6);
+      text-shadow: 1px 0 1px #000;
+      font-size:15px;
+      margin-right: 20px;
+      border: 1px rgba(0,0,0,0.5) solid;
+     }
+     #button-01{
+      
+     }
+     h3{
+      color: #fff;
+
+     }
+	</style>
+</head>
+<body>
+	   <h3>美女画廊</h3>
+	   <a href="#" style="color:#c60;text-decoration:none;">注册</a>
+	   
+         <ul id="list-01">
+         	<li><a href="image/1.jpg" title="图片A"><img src="image/1-small.jpg" alt="" width="100px" title="图片A" ></a></li>
+         	<li><a href="image/2.jpg" title="图片B"><img src="image/2-small.jpg" alt="" width="100px" title="图片B"></a></li>
+         	<li><a href="image/3.jpg" title="图片C"><img src="image/3-small.jpg" alt="" width="100px" title="图片C"></a></li>
+         	<li><a href="image/4.jpg" title="图片D"><img  src="image/4-small.jpg" alt="" width="100px" title="图片D"></a></li>
+         </ul>
+	   
+	   <div style="clear:both;"></div>
+       <img src="image/1.jpg" alt="" id="big-photo" width="600px" border="3px  none #000">
+       <p id="des">请选择图片</p>
+       <div id="bbb">
+         <button id="button-01">灰度</button>
+         <button id="button-02">反向</button>
+         <button id="button-03">模糊</button>
+         <button id="button-04">透明度降低</button>
+         <button id="button-05">对比度</button>
+         <button id="button-06">反转</button>
+         <button id="button-07">深褐色</button>
+         <button id="button-08">饱和度</button>
+         <button id="button-09">清除滤镜</button>
+       </div>
+	<script>
+	var ul = document.getElementById("list-01");
+     var aArr = ul.getElementsByTagName("a");
+     var img = document.getElementById("big-photo");
+     var des = document.getElementById("des");
+     var body = document.getElementsByTagName("body");
+     for(var i=0;i<aArr.length;i++){
+     	aArr[i].onmouseover = function(){
+     		img.src = this.href;
+     		img.style.width = "600px";
+        img.style.border = "3px solid #000";
+     		// img.style.boxShadow = "5px 5px 20px  rgba(0,0,0,0.9)";
+     		des.innerHTML = this.title;
+     		body.style.backgroundColor = "red";
+     		return false;
+     	}
+     }
+     
+     var button01 = document.getElementById("button-01");
+     var button02 = document.getElementById("button-02");
+     var button03 = document.getElementById("button-03");
+     var button04 = document.getElementById("button-04");
+     var button05 = document.getElementById("button-05");
+     var button06 = document.getElementById("button-06");
+     var button07 = document.getElementById("button-07");
+     var button08 = document.getElementById("button-08");
+     var button09 = document.getElementById("button-09");
+     button01.onclick = function(){
+       img.style.filter="grayscale(100%)";
+     }
+     button02.onclick = function(){
+       img.style.filter="hue-rotate(90deg)";
+     }
+     button04.onclick = function(){
+       img.style.filter="opacity(80%)";
+     }
+     button03.onclick = function(){
+       img.style.filter="blur(1px)";
+     }
+     button05.onclick = function(){
+       img.style.filter="contrast(200%)";
+     }
+     button06.onclick = function(){
+       img.style.filter="invert(100%)";
+     }
+     button07.onclick = function(){
+       img.style.filter="sepia(100%)";
+     }
+     button08.onclick = function(){
+       img.style.filter="saturate(200%)";
+     }
+     button09.onclick = function(){
+       img.style.filter="none";
+     }
+	</script>
+</body>
+</html>
